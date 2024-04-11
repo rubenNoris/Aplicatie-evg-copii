@@ -1,98 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <!-- ctrl + d -->
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Cinzel"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Merienda"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Indie+Flower&family=Prata&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Prata&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- <script defer src="animation.js"></script> -->
-  </head>
-
-  <body>
-    <div class="title">
-      <h1>Platforma&nbsp</h1>
-      <h1>baza de date&nbsp</h1>
-      <h1>copii</h1>
-    </div>
-    <br />
-    <br />
-
-    <div class="nav">
-      <a>
-        <!-- hidden1 -->
-        <div class="despre zoom">
-          <h2 class="padding">Despre</h2>
-          <p style="padding: 10px">
-            "Lasati copilasii sa vina la Mine" - Suntem un grup de oameni cu
-            dorinta de a impartasi evanghelia si copiilor. Stiind ca o nevoie
-            majora este ajutorul, am cautat ca prin aceasta platforma sa ajutam
-            cat am reusit si noi, nevoile ce sunt.
-          </p>
-          <h4>Vom cauta sa dezvoltam acest ajutor</h4>
+<div class="all">
+    <div class="position-relative">
+        <div>
+            <app-header></app-header>
         </div>
-      </a>
 
-      <!-- <a href="resurse.html" target="_parent" style="color: black"> -->
-      <a routerLink="/resurse">
-        <!-- hidden2 -->
-        <div class="resurse zoom">
-          <h2 class="padding">Resurse</h2>
-          <p style="padding: 10px">
-            Sectiunea "Resurse" contine o mica baza de date cu jocuri,
-            activitati, cantece si lectii ce pot fi foarte folositoare in timpul
-            unui program de evanghelizare cu copii.
-          </p>
-          <h4>*Apasa pentru a accesa resursele</h4>
-        </div>
-      </a>
+        <router-outlet></router-outlet>
 
-      <a
-        href="https://chat.whatsapp.com/LPpV4iTnOXA0MN8j0263ST"
-        target="_parent"
-        style="color: black"
-      >
-        <!-- hidden1 -->
-        <div class="ajutor zoom">
-          <h2 class="padding">Ajutor</h2>
-          <p style="padding: 10px">
-            Sectiunea "Ajutor" are rolul de a veni in ajutor nevoilor care nu au
-            fost abordate in aceasta platforma. Pentru nevoi ca grafica pentru
-            imagini la copii, alternative la lectii, sau orice altceva, puteti
-            prin apasare sa intrati pe un grup unde puteti cere si primi ajutor.
-          </p>
-          <h4>*Ajutorul va fi in limita posibilitatilor</h4>
-        </div>
-      </a>
+        <br />
+        <Br />
+        <BR />
+
+        <!-- <ngx-spinner size='medium' bdColor='rgba(255, 255, 255, .4)' type='line-scale'>
+          <div class="text">
+              <h1>O picat site-ul :(</h1>
+
+          </div>
+      </ngx-spinner> -->
     </div>
-
-    <div class="tel">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-    </div>
-  </body>
-</html>
+</div>
