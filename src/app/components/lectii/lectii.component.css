@@ -85,7 +85,7 @@ p {
   height: 400px;
   width: 300px;
   border-radius: 0 250px 250px 0;
-  background-image: url("picatura.jpg");
+  /* background-image: url("picatura.jpg"); */
   background-size: cover;
   /* background-color: rgba(244, 191, 191, 0.589); */
   border: 4px solid rgb(85, 85, 85);
