@@ -21,6 +21,7 @@ import { CompetitiiComponent } from './components/competitii/competitii.componen
 import { LectiiComponent } from './components/lectii/lectii.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ResurseComponent } from './components/resurse/resurse.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ResurseComponent } from './components/resurse/resurse.component';
     LectiiComponent,
     HeaderComponent,
     ResurseComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideClientHydration()],

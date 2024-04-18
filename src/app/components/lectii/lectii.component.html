@@ -1,886 +1,822 @@
-<!DOCTYPE html>
-<html>
-  <!-- ctrl + d -->
+<div class="navigatie">
+  <a href="resurse.html"> <i class="gg-arrow-left"></i></a>
+  <h1 style="animation-name: fade; animation-duration: 3s">Lectii</h1>
+</div>
+<hr />
+<h2 style="margin: 5px; padding: 10px">Sorteaza</h2>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+<div class="sort">
+  <button class="box active" onclick="filterSelection('all')">Toate</button>
+  <button class="box" onclick="filterSelection('presc')">Prescolari</button>
+  <button class="box" onclick="filterSelection('scolari')">Scolari</button>
+  <button class="box" onclick="filterSelection('gim')">Gimnaziu</button>
+</div>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Cinzel"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Merienda"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Indie+Flower&family=Prata&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Prata&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <div class="navigatie">
-      <a href="resurse.html"> <i class="gg-arrow-left"></i></a>
-      <h1 style="animation-name: fade; animation-duration: 3s">Lectii</h1>
+<div class="resurses">
+  <div class="filterDiv scolari gim presc">
+    <h2>Moise - eliberatorul ales</h2>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <button class="accordion">1. Nașterea lui Moise</button>
+    <div class="panel">
+      <p>
+        Exodul 1:11-2:10 <br />
+        –> verset de memorat: 1 Ioan 1:8 <br />
+      </p>
     </div>
-    <hr />
-    <h2 style="margin: 5px; padding: 10px">Sorteaza</h2>
+  </div>
 
-    <div class="sort">
-      <button class="box active" onclick="filterSelection('all')">Toate</button>
-      <button class="box" onclick="filterSelection('presc')">Prescolari</button>
-      <button class="box" onclick="filterSelection('scolari')">Scolari</button>
-      <button class="box" onclick="filterSelection('gim')">Gimnaziu</button>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">2. Chemarea lui Moise</button>
+    <div class="panel">
+      <p>
+        Exodul 2:10-4:18, Fapte 7:22-35,<br />
+        Evrei 11:24-27<br />
+        ->verset de memorat : 2 Samuel 22:31
+      </p>
     </div>
+  </div>
 
-    <div class="resurses">
-      <div class="filterDiv scolari gim presc">
-        <h2>Moise - eliberatorul ales</h2>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <button class="accordion">1. Nașterea lui Moise</button>
-        <div class="panel">
-          <p>
-            Exodul 1:11-2:10 <br />
-            –> verset de memorat: 1 Ioan 1:8 <br />
-          </p>
-        </div>
-      </div>
+  <div class="filterDiv scolari presc gim">
+    <button class="accordion">3. Moise prezintă mesajul lui Dumnezeu</button>
+    <div class="panel">
+      <p>
+        Exodul 4:18-6:9<br />
+        -> Verset de memorat: Ieremia 17:7
+      </p>
+    </div>
+  </div>
 
-      <div class="filterDiv scolari gim">
-        <button class="accordion">2. Chemarea lui Moise</button>
-        <div class="panel">
-          <p>
-            Exodul 2:10-4:18, Fapte 7:22-35,<br />
-            Evrei 11:24-27<br />
-            ->verset de memorat : 2 Samuel 22:31
-          </p>
-        </div>
-      </div>
-
-      <div class="filterDiv scolari presc gim">
-        <button class="accordion">
-          3. Moise prezintă mesajul lui Dumnezeu
-        </button>
-        <div class="panel">
-          <p>
-            Exodul 4:18-6:9<br />
-            -> Verset de memorat: Ieremia 17:7
-          </p>
-        </div>
-      </div>
-
-      <div class="filterDiv scolari gim">
-        <button class="accordion">4. Moise vede puterea lui Dumnezeu</button>
-        <div class="panel">
-          <p>
-            Exodul 7:1-12:51<br />
-            -> verset de memorat: Galateni 4:31
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">5. Trecerea triumfală</button>
-        <div class="panel">
-          <p>
-            Exodul 13:17-15:21<br />
-            -> Verset de memorat: Matei 28:20
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          6. Oamenii se plâng, Dumnezeu le poartă de grijă
-        </button>
-        <div class="panel">
-          <p>
-            Exodul 15:22-17:7 <br />
-            -> Verset de memorat: Psalmul 37:4
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <h2>Moise - dătătorul legii</h2>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">1. Dumnezeu vorbește la Sinai</button>
-        <div class="panel">
-          <p>
-            - Exodul 17:1-7, Exodul 19,20<br />
-            -> Verset de memorat: Luca 11:28
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">2. Idolatria poporului Israel</button>
-        <div class="panel">
-          <p>
-            Exodul 24:12- 13:1,<br />
-            Exodul 31:18, <br />
-            Exodul 32, 34<br />
-            -> Verset de memorat: Psalmul 51:4
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <button class="accordion">3. Explorarea țării promise</button>
-        <div class="panel">
-          <p>
-            Numeri 13, 14, <br />Deuteronomul 1:19-46<br />-> verset de memorat:
-            Isaia 63:1
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          4. Moise păcătuiește împotriva lui Dumnezeu
-        </button>
-        <div class="panel">
-          <p>Numeri 20<br />-> Verset de memorat: 1 Ioan 4:4b</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">5. Șarpele de aramă</button>
-        <div class="panel">
-          <p>
-            Numeri 21:1-9,<br />Ioan 3:1-16<br />-> Verset de memorat: Ioan 6:47
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">6. Moise și schimbarea la față</button>
-        <div class="panel">
-          <p>
-            Numeri 27:12-23,<br />
-            Deuteronomul 31:1-8,11-12,<br />
-            Deuteronomul 34,<br />
-            Luca 9:28-36<br />-> verset de memorat: Psalmul 100:5a
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <h2>Iosua - războinicul lui Dumnezeu</h2>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          1. Iosua este ales de Dumnezeu să conducă poporul-
-        </button>
-        <div class="panel">
-          <p>
-            Numeri 27:15-23,<br />
-            Deuteronom 31:7,<br />
-            Deuteronom 34:9,<br />
-            Iosua 1:1-18<br />-> Verset de memorat: Iosua 1:9
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">2. Funia cărămizie la fereastră</button>
-        <div class="panel">
-          <p>Iosua 2:1-24<br />-> Verset de memorat: Romani 8:1</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <button class="accordion">3. Căderea Ierihonului</button>
-        <div class="panel">
-          <p>
-            Iosua 3, 4:1-18,<br />
-            Iosua 5:13-16:27<br />-> Verset de memorat: Psalmul 118:15
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">4. Păcatul lui Acan</button>
-        <div class="panel">
-          <p>Iosua 7:1-26<br />-> Verset de memorat: 1 Petru 1:16</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">5. Povestirea despre gabaoniți</button>
-        <div class="panel">
-          <p>Iosua 9:1-10:27<br />-> Verset de memorat: Proverbe 3:5</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">6. Iosua își ia rămas bun de la popor</button>
-        <div class="panel">
-          <p>
-            Numeri 13:17-33,<br />
-            Iosua 14:1-15,<br />
-            Iosua 23:1-24:26<br />-> Verset de memorat: recapitulare 1 Petru
-            1:16, Proverbe 3:5
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <h2>Judecători- neascultare și eliberare</h2>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">1. Israel își calcă promisiunea</button>
-        <div class="panel">
-          <p>
-            Iosua 24,<br />
-            Judecători 1, 2:1-23<br />-> Verset de memorat: Matei 22:37
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          2. Debora și Barac eliberează Israelul
-        </button>
-        <div class="panel">
-          <p>
-            Judecători 4:1-24, 5:1-31<br />-> Verset de memorat: Psalmul 103:19
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <button class="accordion">
-          3. Ghedeon învață să fie curajos pentru Dumnezeu
-        </button>
-        <div class="panel">
-          <p>Judecători 6:1-40<br />-> Verset de memorat: Iacov 4:7-8</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          4. Ghedeon și cei 300 împotriva madianiților
-        </button>
-        <div class="panel">
-          <p>
-            Judecători 7:1-25, 8:22-23,28<br />-> verset de memorat: 2 Timotei
-            4:7
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">5. Dumnezeu îl alege pe Samson</button>
-        <div class="panel">
-          <p>Judecători 13:15-20<br />-> verset de memorat: Psalmul 40:5</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">6. Samson și Dalila</button>
-        <div class="panel">
-          <p>Judecători 16:4-31<br />-> Verset de memorat: Evrei 12:1</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <h2>David- un om după inima lui Dumnezeu</h2>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">1. Israel alege un împărat</button>
-        <div class="panel">
-          <p>1 Samuel 8-10<br />-> Verset de memorat: Psalmul 23:1</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">2. Neascultarea lui Saul</button>
-        <div class="panel">
-          <p>1 Samuel 12-15<br />-> Verset de memorat: Psalmul 23:2</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <button class="accordion">3. Dumnezeu alege un împărat</button>
-        <div class="panel">
-          <p>1 Samuel 16<br />-> Verset de memorat: Psalmul 23:3</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <button class="accordion">4. David și Goliat</button>
-        <div class="panel">
-          <p>
-            1 Samuel 17:1-54<br />
-            -> Verset de memorat: Psalmul 23:4
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">5. Un prieten și un dușman</button>
-        <div class="panel">
-          <p>
-            1 Samuel 18:1-16, 19:1-10,<br />
-            1 Samuel 20<br />-> Verset de memorat: Psalmul 23:5
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">6. David își cruță dușmanul</button>
-        <div class="panel">
-          <p>
-            1 Samuel 21:1-22:2,<br />
-            1 Samuel 22:17-19,<br />
-            1 Samuel 23:1-24:22,<br />
-            1 Samuel 26:1-25<br />-> Verset de memorat: Psalmul 23:6
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <h2>Domnia lui David- eșecuri și victorii</h2>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">1. David în fața filistenilor</button>
-        <div class="panel">
-          <p>
-            1 Samuel 27:1-7,<br />
-            1 Samuel 28:1-2,<br />
-            1 Samuel 29:1-11,<br />
-            1 Samuel 30:1-19,br> -> Verset de memorat: recapitulare Psalmul 23
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">2. Saul merge la o ghicitoare</button>
-        <div class="panel">
-          <p>
-            1 Samuel 28:1-25,<br />
-            1 Samuel 31:1-7,<br />
-            2 Samuel 1:12,17-27<br />
-            -> verset de memorat: Leveticul 19:31
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          3. David ajunge împărat după cum a spus Dumnezeu
-        </button>
-        <div class="panel">
-          <p>
-            2 Samuel 2:1-4,8-10,<br />
-            2 Samuel 3:1,<br />
-            6-12, 17-39,<br />
-            2 Samuel 4:5-7, 2 Samuel 5:1-12,<br />
-            2 Samuel 7:1-13<br />-> Verset de memorat 1Petru 5:6
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          4. Chivotul legământului este recuperat și adus înapoi
-        </button>
-        <div class="panel">
-          <p>
-            1 Samuel 4:2-11,<br />
-            1 Samuel 5:1-6:21,<br />
-            2 Samuel 6:1-19,<br />Numeri 4:5,15,20<br />-> Verset de memorat:
-            Isaia 55:8
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">5. David și Bat-Șeba</button>
-        <div class="panel">
-          <p>
-            1 Samuel 11:1-27,<br />
-            2 Samuel 12:1-24<br />-> Verset de memorat: 1 Timotei 5:22b
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">6. David și Mefiboșet</button>
-        <div class="panel">
-          <p>
-            2 Samuel 4:4,<br />
-            2 Samuel 9:1-13,<br />
-            2 Samuel 16:1-4,<br />
-            2 Samuel 19:15, <br />
-            24-30 <br />->Verset de memorat: Psalmul 27:1
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          7. Solomon-succesorul lui David la tron
-        </button>
-        <div class="panel">
-          <p>
-            1 Cronici 22:2-23:5,<br />
-            2 Samuel 7:11b-29,<br />
-            1 Împărați 1:3,34,<br />
-            1 Împărați 2:1-4,<br />
-            2 Cronici 29:28,<br />
-            Luca 1:26-33,<br />
-            Luca 11:31,<br />
-            Zaharia 14:9,<br />
-            Apocalipsa 11:15<br />->Verset de memorat: recapitulare versete
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <h2>Ilie- profetul Dumnezeului celui viu</h2>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          1. Ilie aduce o veste înspăimântătoare
-        </button>
-        <div class="panel">
-          <p>1 Împărați 17:1-16<br />-> Verset de memorat: 1 Cronici 29:11</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          2. Ilie luptă împotriva dumnezeului fals
-        </button>
-        <div class="panel">
-          <p>
-            1 Împărați 18:1-2,<br />
-            17-46 <br />-> Verset de memorat: Isaia 44:6
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">3. Ilie fuge de împărăteasa Izabela</button>
-        <div class="panel">
-          <p>1 Împărați19:1-21<br />-> Verset de memorat: Psalmul 145:8</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">4. Ilie și via lui Nabot</button>
-        <div class="panel">
-          <p>1 Împărați 21:1-26<br />-> Verset de memorat: Deuteronom 32:4</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">5. Ilie este luat la cer</button>
-        <div class="panel">
-          <p>2 Împărați 2:1-15<br />-> Versetul de memorat: Psalmul 32:8</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">6. Ilie vorbește cu Domnul Isus</button>
-        <div class="panel">
-          <p>
-            Matei 17:1-8,<br />
-            Marcu 9:2-8<br />-> Verset de memorat: recapitulare versete
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <h2>Elisei- profetul Dumnezeului credincios</h2>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">1. Începutul lucrării lui Elisei</button>
-        <div class="panel">
-          <p>2 Împărați 2:13-25<br />-> Verset de memorat: Galateni 6:9</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <button class="accordion">
-          2. Minunea cu uleiul din vasul văduvei
-        </button>
-        <div class="panel">
-          <p>2 Împărați 4:1-7<br />-> Verset de memorat: Filipeni 4:19</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">3. Învierea fiului sunamitei</button>
-        <div class="panel">
-          <p>2 Împărați 4:8-37<br />-> Verset de memorat: Luca 18:27</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">4. Vindecarea lui Naaman de lepră</button>
-        <div class="panel">
-          <p>2 Împărați 5:1-16<br />-> Verset de memorat: 1 Ioan 1:9</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          5. Orbirea sirienilor și conducerea lor în Samaria
-        </button>
-        <div class="panel">
-          <p>
-            2 Împărați 6:8-23<br />-> Verset de memorat: recapitulare versete
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          6. Împresurarea Samariei+ Fuga filistenilor
-        </button>
-        <div class="panel">
-          <p>
-            2 Împărați 6:24-7:1-16<br />-> Verset de memorat: recapitulare
-            versete
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <h2>Estera</h2>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">1. Estera ajunge împărăteasă</button>
-        <div class="panel">
-          <p>
-            2 Împărați 24:10-25:30,<br />
-            Estera 1:1-2:20<br />-> verset de memorat: Ieremia 29:11
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          2. Mardoheu este neclintit în hotărârea lui
-        </button>
-        <div class="panel">
-          <p>
-            Estera 2:21-4:3<br />->Vverset de memorat: Faptele Apostolilor 5:29
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">3. Un strigăt după ajutor</button>
-        <div class="panel">
-          <p>Estera 3:15b-5:2<br />->Verset de memorat: Psalmul 34:15</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">4. Poporul lui Dumnezeu este onorat</button>
-        <div class="panel">
-          <p>Estera 5-6<br />-> Verset de memorat: Proverbe 14:12</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <button class="accordion">5. Estera intervine pentru poporul ei</button>
-        <div class="panel">
-          <p>
-            Estera 6:14-8:14,<br />
-            Psalmul 73<br />-> Verset de memorat:1 Petru 5:7
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          6. Poporul lui Dumnezeu este victorios
-        </button>
-        <div class="panel">
-          <p>
-            Estera 8:1-9:17,<br />
-            Estera 10:1-3<br />-> Verset de memorat: Ieremia 31:3
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <h2>Neemia</h2>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">1. Paharnicul cu inima împovărată</button>
-        <div class="panel">
-          <p>Neemia 1:1-2:8<br />-> Verset de memorat: Ieremia 33.3</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">2. O chemare la trezire și zidire</button>
-        <div class="panel">
-          <p>
-            Neemia 2:9-20<br />-> Verset de memorat: Faptele Apostolilor 9:6
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          3. Construirea zidurilor și confruntarea cu dușmanii
-        </button>
-        <div class="panel">
-          <p>Neemia 3-4<br />-> Verset de memorat: Romani 8:31</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          4. Rezolvarea problemelor apărute între oamenii lui Dumnezeu
-        </button>
-        <div class="panel">
-          <p>Neemia 5-6<br />-> Verset de memorat: Proverbe 2:6</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">5. Un oraș dedicat lui Dumnezeu</button>
-        <div class="panel">
-          <p>Neemia 7-13<br />-> Verset de memorat: Matei 6:24</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <h2>Un Salvator pentru tine</h2>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <button class="accordion">1. Nașterea Domnului Isus</button>
-        <div class="panel">
-          <p>
-            Matei 1:18-25,<br />
-            Luca 1:26-38,<br />
-            Luca 2:1-20<br />-> Verset de memorat: Faptele Apostolilor 4:12
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <button class="accordion">
-          2. Domnul Isus vindecă un om paralizat
-        </button>
-        <div class="panel">
-          <p>Matei 2:1-12<br />-> Verset de memorat: Marcu 2:10</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          3. Suferințele și răstignirea Domnului Isus
-        </button>
-        <div class="panel">
-          <p>
-            Matei 26:57-27:66,<br />
-            Ioan 19,<br />
-            Luca 23:39-43<br />->Verset de memorat: Isaia 53:5
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">4. Învierea Domnului Isus</button>
-        <div class="panel">
-          <p>
-            Ioan 20,<br />
-            Luca 24:1-12<br /><br />-> Verset de memorat: recapitularea
-            versetelor
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">5. Marele Împărat</button>
-        <div class="panel">
-          <p>
-            Matei 28:16-20,<br />
-            Fapte 1:1-11,<br />
-            Apocalipsa 1:9-19,<br />
-            Apocalipsa 22:20<br />
-            -> Verset de memorat: Romani 10:13
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <h2>Minunata salvare dăruită de Dumnezeu</h2>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          1. Ioan Botezătorul arată calea mântuirii
-        </button>
-        <div class="panel">
-          <p>
-            Ioan 1:19-36,<br />
-            Luca 3:1-3,<br />
-            Matei 3:1-6,<br />
-            Exodul 12<br />
-            ->Verset de memorat: 1 Ioan 4:9
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          2. Nicodim ascultă o întâmplare din Vechiul Testament
-        </button>
-        <div class="panel">
-          <p>
-            Ioan 3:1-16,<br />
-            Numeri 21:4-9<br />-> Verset de memorat: Ioan 3:16
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <button class="accordion">3. Zacheu este găsit de Mântuitorul</button>
-        <div class="panel">
-          <p>Luca 19:1-10<br />-> Verset de memorat: Ioan 1:12</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">4. Fiul risipitor învață o lecție</button>
-        <div class="panel">
-          <p>Luca 5:1, 10-32<br />-> Verset de memorat: recapitulare Versete</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">5. Pavel și Sila la Filipi</button>
-        <div class="panel">
-          <p>
-            Faptele Apostolilor 16:11-40<br />-> Verset de memorat: Faptele
-            Apostolilor 16:31
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <h2>Cine este acest Isus?</h2>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">1. Vindecarea unui om paralizat</button>
-        <div class="panel">
-          <p>
-            Marcu 2:1-12,<br />
-            Matei 9:1-8,<br />
-            Luca 5:17-26<br />-> Verset de memorat: Faptele Apostolilor 10:43b
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">2. Potolirea furtunii</button>
-        <div class="panel">
-          <p>
-            Marcu 4:35-41,<br />
-            Matei 8:18,23-27,<br />
-            Luca 8:22-25<br />-> Verset de memorat: recapitularea Versetului
-            anterior
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">3. Samariteanca</button>
-        <div class="panel">
-          <p>Ioan 4:1-42<br />-> Verset de memorat: Romani 6:23</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          4. Vindecarea slujitorului unui ofițer
-        </button>
-        <div class="panel">
-          <p>
-            Luca 7:1-10,<br />
-            Matei 8:5-13<br />-> Verset de memorat: Efeseni 2:8
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim presc">
-        <button class="accordion">5. Samariteanul milos</button>
-        <div class="panel">
-          <p>Luca 10:25-37<br />-> Verset de memorat: Efeseni 2:9</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <h2>Cunoașterea lui Isus</h2>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">1. Păstorul cel bun</button>
-        <div class="panel">
-          <p>
-            Luca 15:1-7,<br />
-            Ioan 10:1-10,<br />
-            Matei 18:11-14<br />-> Verset de memorat: Ioan 10:11
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">2. Pâinea vieții</button>
-        <div class="panel">
-          <p>
-            Matei 14:13-21,<br />
-            Marcu 6:32-44,<br />
-            Luca 9:10-17,<br />
-            Ioan 6:1-59<br />-> Verset de memorat: Ioan 6:35
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">3. Învierea</button>
-        <div class="panel">
-          <p>Ioan 11:1-46<br />-> Verset de memorat: Ioan 11:25</p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">4. Lumina lumii</button>
-        <div class="panel">
-          <p>
-            Luca 18:31-43,<br />
-            Marcu 10:32-34,<br />
-            46-52, <br />
-            Matei 20:17-19, 29-34,<br />
-            Luca 24:18<br />
-            -> Verset de memorat: Ioan 8:12
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">5. Calea</button>
-        <div class="panel">
-          <p>
-            Ioan 13:1-2,30-38,<br />
-            Ioan 14:1-6<br />-> Verset de memorat: Ioan 14:6
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <h2>Primii creștini</h2>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          1. Urmașii Domnului Isus vestesc învierea Lui
-        </button>
-        <div class="panel">
-          <p>
-            Marcu 16:1-15,<br />
-            Luca 23:47-24:12,<br />
-            Luca 24:36-53,<br />Ioan 19:38-20:23,<br />
-            Fapte 1:1-11<br />-> verset de memorat: Luca 24:7
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">2. Coborârea Duhului Sfânt</button>
-        <div class="panel">
-          <p>
-            Faptele Apostolilor 2:1-41<br />-> Verset de memorat: Faptele
-            Apostolilor 1:8
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          3. Vindecarea bărbatului paralizat de la poarta templului
-        </button>
-        <div class="panel">
-          <p>
-            Faptele Apostolilor 3:1-16<br />-> Verset de memorat: 1 Corinteni
-            3:9
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">4. Anania și Safira</button>
-        <div class="panel">
-          <p>
-            - Fapte 4:32-5:11,<br />
-            Fapte 8:9-24<br />-> Verset de memorat: Romani 2:16
-          </p>
-        </div>
-      </div>
-      <div class="filterDiv scolari gim">
-        <button class="accordion">
-          5. Petru îi vestește Evanghelia lui Corneliu
-        </button>
-        <div class="panel">
-          <p>
-            - Faptele Apostolilor 10:1-48<br />-> Verset de memorat: Matei 24:14
-          </p>
-        </div>
-        <div class="filterDiv scolari gim">
-          <button class="accordion">
-            6. Prigonirea creștinilor și omorârea lui Ștefan
-          </button>
-          <div class="panel">
-            <p>
-              Fapte 4:1-31,<br />
-              Fapte 5:17-7:60<br />-> Verset de memorat: Luca 21:17-18
-            </p>
-          </div>
-        </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">4. Moise vede puterea lui Dumnezeu</button>
+    <div class="panel">
+      <p>
+        Exodul 7:1-12:51<br />
+        -> verset de memorat: Galateni 4:31
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">5. Trecerea triumfală</button>
+    <div class="panel">
+      <p>
+        Exodul 13:17-15:21<br />
+        -> Verset de memorat: Matei 28:20
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      6. Oamenii se plâng, Dumnezeu le poartă de grijă
+    </button>
+    <div class="panel">
+      <p>
+        Exodul 15:22-17:7 <br />
+        -> Verset de memorat: Psalmul 37:4
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <h2>Moise - dătătorul legii</h2>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">1. Dumnezeu vorbește la Sinai</button>
+    <div class="panel">
+      <p>
+        - Exodul 17:1-7, Exodul 19,20<br />
+        -> Verset de memorat: Luca 11:28
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">2. Idolatria poporului Israel</button>
+    <div class="panel">
+      <p>
+        Exodul 24:12- 13:1,<br />
+        Exodul 31:18, <br />
+        Exodul 32, 34<br />
+        -> Verset de memorat: Psalmul 51:4
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <button class="accordion">3. Explorarea țării promise</button>
+    <div class="panel">
+      <p>
+        Numeri 13, 14, <br />Deuteronomul 1:19-46<br />-> verset de memorat:
+        Isaia 63:1
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      4. Moise păcătuiește împotriva lui Dumnezeu
+    </button>
+    <div class="panel">
+      <p>Numeri 20<br />-> Verset de memorat: 1 Ioan 4:4b</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">5. Șarpele de aramă</button>
+    <div class="panel">
+      <p>
+        Numeri 21:1-9,<br />Ioan 3:1-16<br />-> Verset de memorat: Ioan 6:47
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">6. Moise și schimbarea la față</button>
+    <div class="panel">
+      <p>
+        Numeri 27:12-23,<br />
+        Deuteronomul 31:1-8,11-12,<br />
+        Deuteronomul 34,<br />
+        Luca 9:28-36<br />-> verset de memorat: Psalmul 100:5a
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <h2>Iosua - războinicul lui Dumnezeu</h2>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      1. Iosua este ales de Dumnezeu să conducă poporul-
+    </button>
+    <div class="panel">
+      <p>
+        Numeri 27:15-23,<br />
+        Deuteronom 31:7,<br />
+        Deuteronom 34:9,<br />
+        Iosua 1:1-18<br />-> Verset de memorat: Iosua 1:9
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">2. Funia cărămizie la fereastră</button>
+    <div class="panel">
+      <p>Iosua 2:1-24<br />-> Verset de memorat: Romani 8:1</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <button class="accordion">3. Căderea Ierihonului</button>
+    <div class="panel">
+      <p>
+        Iosua 3, 4:1-18,<br />
+        Iosua 5:13-16:27<br />-> Verset de memorat: Psalmul 118:15
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">4. Păcatul lui Acan</button>
+    <div class="panel">
+      <p>Iosua 7:1-26<br />-> Verset de memorat: 1 Petru 1:16</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">5. Povestirea despre gabaoniți</button>
+    <div class="panel">
+      <p>Iosua 9:1-10:27<br />-> Verset de memorat: Proverbe 3:5</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">6. Iosua își ia rămas bun de la popor</button>
+    <div class="panel">
+      <p>
+        Numeri 13:17-33,<br />
+        Iosua 14:1-15,<br />
+        Iosua 23:1-24:26<br />-> Verset de memorat: recapitulare 1 Petru 1:16,
+        Proverbe 3:5
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <h2>Judecători- neascultare și eliberare</h2>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">1. Israel își calcă promisiunea</button>
+    <div class="panel">
+      <p>
+        Iosua 24,<br />
+        Judecători 1, 2:1-23<br />-> Verset de memorat: Matei 22:37
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">2. Debora și Barac eliberează Israelul</button>
+    <div class="panel">
+      <p>Judecători 4:1-24, 5:1-31<br />-> Verset de memorat: Psalmul 103:19</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <button class="accordion">
+      3. Ghedeon învață să fie curajos pentru Dumnezeu
+    </button>
+    <div class="panel">
+      <p>Judecători 6:1-40<br />-> Verset de memorat: Iacov 4:7-8</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      4. Ghedeon și cei 300 împotriva madianiților
+    </button>
+    <div class="panel">
+      <p>
+        Judecători 7:1-25, 8:22-23,28<br />-> verset de memorat: 2 Timotei 4:7
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">5. Dumnezeu îl alege pe Samson</button>
+    <div class="panel">
+      <p>Judecători 13:15-20<br />-> verset de memorat: Psalmul 40:5</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">6. Samson și Dalila</button>
+    <div class="panel">
+      <p>Judecători 16:4-31<br />-> Verset de memorat: Evrei 12:1</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <h2>David- un om după inima lui Dumnezeu</h2>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">1. Israel alege un împărat</button>
+    <div class="panel">
+      <p>1 Samuel 8-10<br />-> Verset de memorat: Psalmul 23:1</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">2. Neascultarea lui Saul</button>
+    <div class="panel">
+      <p>1 Samuel 12-15<br />-> Verset de memorat: Psalmul 23:2</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <button class="accordion">3. Dumnezeu alege un împărat</button>
+    <div class="panel">
+      <p>1 Samuel 16<br />-> Verset de memorat: Psalmul 23:3</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <button class="accordion">4. David și Goliat</button>
+    <div class="panel">
+      <p>
+        1 Samuel 17:1-54<br />
+        -> Verset de memorat: Psalmul 23:4
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">5. Un prieten și un dușman</button>
+    <div class="panel">
+      <p>
+        1 Samuel 18:1-16, 19:1-10,<br />
+        1 Samuel 20<br />-> Verset de memorat: Psalmul 23:5
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">6. David își cruță dușmanul</button>
+    <div class="panel">
+      <p>
+        1 Samuel 21:1-22:2,<br />
+        1 Samuel 22:17-19,<br />
+        1 Samuel 23:1-24:22,<br />
+        1 Samuel 26:1-25<br />-> Verset de memorat: Psalmul 23:6
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <h2>Domnia lui David- eșecuri și victorii</h2>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">1. David în fața filistenilor</button>
+    <div class="panel">
+      <p>
+        1 Samuel 27:1-7,<br />
+        1 Samuel 28:1-2,<br />
+        1 Samuel 29:1-11,<br />
+        1 Samuel 30:1-19,br> -> Verset de memorat: recapitulare Psalmul 23
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">2. Saul merge la o ghicitoare</button>
+    <div class="panel">
+      <p>
+        1 Samuel 28:1-25,<br />
+        1 Samuel 31:1-7,<br />
+        2 Samuel 1:12,17-27<br />
+        -> verset de memorat: Leveticul 19:31
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      3. David ajunge împărat după cum a spus Dumnezeu
+    </button>
+    <div class="panel">
+      <p>
+        2 Samuel 2:1-4,8-10,<br />
+        2 Samuel 3:1,<br />
+        6-12, 17-39,<br />
+        2 Samuel 4:5-7, 2 Samuel 5:1-12,<br />
+        2 Samuel 7:1-13<br />-> Verset de memorat 1Petru 5:6
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      4. Chivotul legământului este recuperat și adus înapoi
+    </button>
+    <div class="panel">
+      <p>
+        1 Samuel 4:2-11,<br />
+        1 Samuel 5:1-6:21,<br />
+        2 Samuel 6:1-19,<br />Numeri 4:5,15,20<br />-> Verset de memorat: Isaia
+        55:8
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">5. David și Bat-Șeba</button>
+    <div class="panel">
+      <p>
+        1 Samuel 11:1-27,<br />
+        2 Samuel 12:1-24<br />-> Verset de memorat: 1 Timotei 5:22b
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">6. David și Mefiboșet</button>
+    <div class="panel">
+      <p>
+        2 Samuel 4:4,<br />
+        2 Samuel 9:1-13,<br />
+        2 Samuel 16:1-4,<br />
+        2 Samuel 19:15, <br />
+        24-30 <br />->Verset de memorat: Psalmul 27:1
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">7. Solomon-succesorul lui David la tron</button>
+    <div class="panel">
+      <p>
+        1 Cronici 22:2-23:5,<br />
+        2 Samuel 7:11b-29,<br />
+        1 Împărați 1:3,34,<br />
+        1 Împărați 2:1-4,<br />
+        2 Cronici 29:28,<br />
+        Luca 1:26-33,<br />
+        Luca 11:31,<br />
+        Zaharia 14:9,<br />
+        Apocalipsa 11:15<br />->Verset de memorat: recapitulare versete
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <h2>Ilie- profetul Dumnezeului celui viu</h2>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">1. Ilie aduce o veste înspăimântătoare</button>
+    <div class="panel">
+      <p>1 Împărați 17:1-16<br />-> Verset de memorat: 1 Cronici 29:11</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">2. Ilie luptă împotriva dumnezeului fals</button>
+    <div class="panel">
+      <p>
+        1 Împărați 18:1-2,<br />
+        17-46 <br />-> Verset de memorat: Isaia 44:6
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">3. Ilie fuge de împărăteasa Izabela</button>
+    <div class="panel">
+      <p>1 Împărați19:1-21<br />-> Verset de memorat: Psalmul 145:8</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">4. Ilie și via lui Nabot</button>
+    <div class="panel">
+      <p>1 Împărați 21:1-26<br />-> Verset de memorat: Deuteronom 32:4</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">5. Ilie este luat la cer</button>
+    <div class="panel">
+      <p>2 Împărați 2:1-15<br />-> Versetul de memorat: Psalmul 32:8</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">6. Ilie vorbește cu Domnul Isus</button>
+    <div class="panel">
+      <p>
+        Matei 17:1-8,<br />
+        Marcu 9:2-8<br />-> Verset de memorat: recapitulare versete
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <h2>Elisei- profetul Dumnezeului credincios</h2>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">1. Începutul lucrării lui Elisei</button>
+    <div class="panel">
+      <p>2 Împărați 2:13-25<br />-> Verset de memorat: Galateni 6:9</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <button class="accordion">2. Minunea cu uleiul din vasul văduvei</button>
+    <div class="panel">
+      <p>2 Împărați 4:1-7<br />-> Verset de memorat: Filipeni 4:19</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">3. Învierea fiului sunamitei</button>
+    <div class="panel">
+      <p>2 Împărați 4:8-37<br />-> Verset de memorat: Luca 18:27</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">4. Vindecarea lui Naaman de lepră</button>
+    <div class="panel">
+      <p>2 Împărați 5:1-16<br />-> Verset de memorat: 1 Ioan 1:9</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      5. Orbirea sirienilor și conducerea lor în Samaria
+    </button>
+    <div class="panel">
+      <p>2 Împărați 6:8-23<br />-> Verset de memorat: recapitulare versete</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      6. Împresurarea Samariei+ Fuga filistenilor
+    </button>
+    <div class="panel">
+      <p>
+        2 Împărați 6:24-7:1-16<br />-> Verset de memorat: recapitulare versete
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <h2>Estera</h2>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">1. Estera ajunge împărăteasă</button>
+    <div class="panel">
+      <p>
+        2 Împărați 24:10-25:30,<br />
+        Estera 1:1-2:20<br />-> verset de memorat: Ieremia 29:11
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      2. Mardoheu este neclintit în hotărârea lui
+    </button>
+    <div class="panel">
+      <p>Estera 2:21-4:3<br />->Vverset de memorat: Faptele Apostolilor 5:29</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">3. Un strigăt după ajutor</button>
+    <div class="panel">
+      <p>Estera 3:15b-5:2<br />->Verset de memorat: Psalmul 34:15</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">4. Poporul lui Dumnezeu este onorat</button>
+    <div class="panel">
+      <p>Estera 5-6<br />-> Verset de memorat: Proverbe 14:12</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <button class="accordion">5. Estera intervine pentru poporul ei</button>
+    <div class="panel">
+      <p>
+        Estera 6:14-8:14,<br />
+        Psalmul 73<br />-> Verset de memorat:1 Petru 5:7
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">6. Poporul lui Dumnezeu este victorios</button>
+    <div class="panel">
+      <p>
+        Estera 8:1-9:17,<br />
+        Estera 10:1-3<br />-> Verset de memorat: Ieremia 31:3
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <h2>Neemia</h2>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">1. Paharnicul cu inima împovărată</button>
+    <div class="panel">
+      <p>Neemia 1:1-2:8<br />-> Verset de memorat: Ieremia 33.3</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">2. O chemare la trezire și zidire</button>
+    <div class="panel">
+      <p>Neemia 2:9-20<br />-> Verset de memorat: Faptele Apostolilor 9:6</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      3. Construirea zidurilor și confruntarea cu dușmanii
+    </button>
+    <div class="panel">
+      <p>Neemia 3-4<br />-> Verset de memorat: Romani 8:31</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      4. Rezolvarea problemelor apărute între oamenii lui Dumnezeu
+    </button>
+    <div class="panel">
+      <p>Neemia 5-6<br />-> Verset de memorat: Proverbe 2:6</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">5. Un oraș dedicat lui Dumnezeu</button>
+    <div class="panel">
+      <p>Neemia 7-13<br />-> Verset de memorat: Matei 6:24</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <h2>Un Salvator pentru tine</h2>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <button class="accordion">1. Nașterea Domnului Isus</button>
+    <div class="panel">
+      <p>
+        Matei 1:18-25,<br />
+        Luca 1:26-38,<br />
+        Luca 2:1-20<br />-> Verset de memorat: Faptele Apostolilor 4:12
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <button class="accordion">2. Domnul Isus vindecă un om paralizat</button>
+    <div class="panel">
+      <p>Matei 2:1-12<br />-> Verset de memorat: Marcu 2:10</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      3. Suferințele și răstignirea Domnului Isus
+    </button>
+    <div class="panel">
+      <p>
+        Matei 26:57-27:66,<br />
+        Ioan 19,<br />
+        Luca 23:39-43<br />->Verset de memorat: Isaia 53:5
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">4. Învierea Domnului Isus</button>
+    <div class="panel">
+      <p>
+        Ioan 20,<br />
+        Luca 24:1-12<br /><br />-> Verset de memorat: recapitularea versetelor
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">5. Marele Împărat</button>
+    <div class="panel">
+      <p>
+        Matei 28:16-20,<br />
+        Fapte 1:1-11,<br />
+        Apocalipsa 1:9-19,<br />
+        Apocalipsa 22:20<br />
+        -> Verset de memorat: Romani 10:13
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <h2>Minunata salvare dăruită de Dumnezeu</h2>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">1. Ioan Botezătorul arată calea mântuirii</button>
+    <div class="panel">
+      <p>
+        Ioan 1:19-36,<br />
+        Luca 3:1-3,<br />
+        Matei 3:1-6,<br />
+        Exodul 12<br />
+        ->Verset de memorat: 1 Ioan 4:9
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      2. Nicodim ascultă o întâmplare din Vechiul Testament
+    </button>
+    <div class="panel">
+      <p>
+        Ioan 3:1-16,<br />
+        Numeri 21:4-9<br />-> Verset de memorat: Ioan 3:16
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <button class="accordion">3. Zacheu este găsit de Mântuitorul</button>
+    <div class="panel">
+      <p>Luca 19:1-10<br />-> Verset de memorat: Ioan 1:12</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">4. Fiul risipitor învață o lecție</button>
+    <div class="panel">
+      <p>Luca 5:1, 10-32<br />-> Verset de memorat: recapitulare Versete</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">5. Pavel și Sila la Filipi</button>
+    <div class="panel">
+      <p>
+        Faptele Apostolilor 16:11-40<br />-> Verset de memorat: Faptele
+        Apostolilor 16:31
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <h2>Cine este acest Isus?</h2>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">1. Vindecarea unui om paralizat</button>
+    <div class="panel">
+      <p>
+        Marcu 2:1-12,<br />
+        Matei 9:1-8,<br />
+        Luca 5:17-26<br />-> Verset de memorat: Faptele Apostolilor 10:43b
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">2. Potolirea furtunii</button>
+    <div class="panel">
+      <p>
+        Marcu 4:35-41,<br />
+        Matei 8:18,23-27,<br />
+        Luca 8:22-25<br />-> Verset de memorat: recapitularea Versetului
+        anterior
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">3. Samariteanca</button>
+    <div class="panel">
+      <p>Ioan 4:1-42<br />-> Verset de memorat: Romani 6:23</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">4. Vindecarea slujitorului unui ofițer</button>
+    <div class="panel">
+      <p>
+        Luca 7:1-10,<br />
+        Matei 8:5-13<br />-> Verset de memorat: Efeseni 2:8
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim presc">
+    <button class="accordion">5. Samariteanul milos</button>
+    <div class="panel">
+      <p>Luca 10:25-37<br />-> Verset de memorat: Efeseni 2:9</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <h2>Cunoașterea lui Isus</h2>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">1. Păstorul cel bun</button>
+    <div class="panel">
+      <p>
+        Luca 15:1-7,<br />
+        Ioan 10:1-10,<br />
+        Matei 18:11-14<br />-> Verset de memorat: Ioan 10:11
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">2. Pâinea vieții</button>
+    <div class="panel">
+      <p>
+        Matei 14:13-21,<br />
+        Marcu 6:32-44,<br />
+        Luca 9:10-17,<br />
+        Ioan 6:1-59<br />-> Verset de memorat: Ioan 6:35
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">3. Învierea</button>
+    <div class="panel">
+      <p>Ioan 11:1-46<br />-> Verset de memorat: Ioan 11:25</p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">4. Lumina lumii</button>
+    <div class="panel">
+      <p>
+        Luca 18:31-43,<br />
+        Marcu 10:32-34,<br />
+        46-52, <br />
+        Matei 20:17-19, 29-34,<br />
+        Luca 24:18<br />
+        -> Verset de memorat: Ioan 8:12
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">5. Calea</button>
+    <div class="panel">
+      <p>
+        Ioan 13:1-2,30-38,<br />
+        Ioan 14:1-6<br />-> Verset de memorat: Ioan 14:6
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <h2>Primii creștini</h2>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      1. Urmașii Domnului Isus vestesc învierea Lui
+    </button>
+    <div class="panel">
+      <p>
+        Marcu 16:1-15,<br />
+        Luca 23:47-24:12,<br />
+        Luca 24:36-53,<br />Ioan 19:38-20:23,<br />
+        Fapte 1:1-11<br />-> verset de memorat: Luca 24:7
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">2. Coborârea Duhului Sfânt</button>
+    <div class="panel">
+      <p>
+        Faptele Apostolilor 2:1-41<br />-> Verset de memorat: Faptele
+        Apostolilor 1:8
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      3. Vindecarea bărbatului paralizat de la poarta templului
+    </button>
+    <div class="panel">
+      <p>
+        Faptele Apostolilor 3:1-16<br />-> Verset de memorat: 1 Corinteni 3:9
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">4. Anania și Safira</button>
+    <div class="panel">
+      <p>
+        - Fapte 4:32-5:11,<br />
+        Fapte 8:9-24<br />-> Verset de memorat: Romani 2:16
+      </p>
+    </div>
+  </div>
+  <div class="filterDiv scolari gim">
+    <button class="accordion">
+      5. Petru îi vestește Evanghelia lui Corneliu
+    </button>
+    <div class="panel">
+      <p>
+        - Faptele Apostolilor 10:1-48<br />-> Verset de memorat: Matei 24:14
+      </p>
+    </div>
+    <div class="filterDiv scolari gim">
+      <button class="accordion">
+        6. Prigonirea creștinilor și omorârea lui Ștefan
+      </button>
+      <div class="panel">
+        <p>
+          Fapte 4:1-31,<br />
+          Fapte 5:17-7:60<br />-> Verset de memorat: Luca 21:17-18
+        </p>
       </div>
     </div>
-  </body>
+  </div>
+</div>
 
-  <!-- <script>
+<!-- <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
 
@@ -942,4 +878,3 @@
       });
     }
   </script> -->
-</html>
