@@ -1,79 +1,67 @@
-.title {
+.navigatie {
   display: flex;
   text-align: center;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   align-self: center;
-  animation-duration: 1s;
-  animation-name: fadeIn;
-  padding-top: 80px;
+  align-items: center;
+  height: 760px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.resurse,
-.despre,
-.ajutor {
-  height: 400px;
-  text-align: center;
-  border-radius: 5%;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.2);
-  margin: 2px solid white;
-  width: 370px;
+h1 {
+  font-size: var(--step-4);
+  font-weight: 220;
+  font-family: "Indie Flower", sans-serif;
 }
 
-.resurse {
-  background-color: #e8a0bf;
+h2,
+h3 {
+  font-weight: 80;
+  font-size: var(--step-1);
+  font-family: "Kalam";
 }
 
-.despre {
-  background-color: #c0dbea;
+p {
+  font-size: 20px;
+  font-family: "Kalam";
 }
 
-.ajutor {
-  background-color: #ba90c6;
-}
-
-.zoom {
-  transition: transform 0.2s;
-}
-
-.zoom:hover {
-  -ms-transform: scale(1.1);
-  /* IE 9 */
-  -webkit-transform: scale(1.1);
-  /* Safari 3-8 */
-  transform: scale(1.1);
+h4 {
+  font-family: "Kalam";
+  font-size: 12px;
 }
 
 @media only screen and (max-width: 500px) {
-  .title {
-    padding: max(33vh, 3rem) 5rem;
-    /* padding-right: max(3vh, 1rem) 2.5rem;
-              padding-top: max(13vh, 1rem) 2.5rem;
-              padding-bottom: max(13vh, 1rem) 2.5rem; */
+  .navigatie {
     display: flex;
-    flex-direction: column;
-    margin-inline: auto;
-  }
-  .resurse,
-  .despre,
-  .ajutor {
-    height: 400px;
     text-align: center;
-    border-radius: 5%;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.2);
-    margin: 2px solid white;
-    width: 300px;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 0px 2px 0px 2px;
   }
-  .resurse {
-    background-color: #e8a0bf;
+  .navigatie {
+    display: none;
   }
-  .despre {
-    background-color: #c0dbea;
+  h1 {
+    font-size: var(--step-5);
+    font-weight: 220;
+    font-family: "Indie Flower", sans-serif;
   }
-  .ajutor {
-    background-color: #ba90c6;
+  h2,
+  h3 {
+    font-weight: 80;
+    font-size: var(--step-4);
+    font-family: "Kalam";
   }
-  .padding {
-    padding-top: 15px;
+  p {
+    font-size: var(--step-2);
+    font-family: "Kalam";
+  }
+  h4 {
+    font-family: "Kalam";
+    font-size: 12px;
   }
 }
