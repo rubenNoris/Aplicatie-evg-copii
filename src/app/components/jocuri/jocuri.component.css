@@ -1,0 +1,97 @@
+.navigatie {
+  display: flex;
+  flex-direction: row;
+  gap: 19vh;
+  text-align: center;
+  color: black;
+  padding: 0px;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 120;
+}
+
+h3 {
+  font-weight: 100;
+  font-size: 32px;
+  font-family: "Kalam";
+}
+
+h2 {
+  font-size: var(--step-3);
+  color: #000;
+  font-family: "Kalam";
+}
+
+p {
+  font-family: "Kalam";
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gg-arrow-left {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 32px;
+    height: 55px;
+  }
+  .gg-arrow-left::after,
+  .gg-arrow-left::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 14px;
+  }
+  .gg-arrow-left::after {
+    width: 18px;
+    height: 18px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    transform: rotate(45deg);
+    bottom: 7px;
+    left: 25px;
+  }
+  .gg-arrow-left::before {
+    width: 46px;
+    height: 2px;
+    bottom: 15px;
+    left: 22px;
+    background: currentColor;
+  }
+  a {
+    color: black;
+  }
+  h1 {
+    font-size: var(--step-4);
+  }
+  h2 {
+    font-size: var(--step-2);
+    color: #000;
+    font-family: "Kalam";
+  }
+  h3 {
+    font-size: var(--step-0);
+    color: #000;
+    font-family: "Kalam";
+  }
+  p {
+    font-size: var(--step-1);
+    color: #000;
+    font-family: "Kalam";
+  }
+}
