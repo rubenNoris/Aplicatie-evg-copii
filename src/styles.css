@@ -213,6 +213,17 @@ h4 {
   animation-name: fadeIn;
 }
 
+.navigatie {
+  display: flex;
+  flex-direction: row;
+  gap: 19vh;
+  text-align: center;
+  color: black;
+  padding: 0px;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -483,6 +494,38 @@ img.img {
     padding: 20px 20px 20px 20px;
     /* height: 410px; */
     overflow-x: scroll;
+  }
+  .gg-arrow-left {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 32px;
+    height: 55px;
+  }
+  .gg-arrow-left::after,
+  .gg-arrow-left::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 14px;
+  }
+  .gg-arrow-left::after {
+    width: 18px;
+    height: 18px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    transform: rotate(45deg);
+    bottom: 7px;
+    left: 25px;
+  }
+  .gg-arrow-left::before {
+    width: 46px;
+    height: 2px;
+    bottom: 15px;
+    left: 22px;
+    background: currentColor;
   }
   /* h1 {
     font-size: var(--step-5);
