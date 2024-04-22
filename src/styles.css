@@ -332,6 +332,28 @@ img.img {
   transform: scale(1.1);
 }
 
+.box {
+  display: flex;
+  padding: 15px;
+  width: max-content;
+  margin: 1px;
+  border-radius: 5px;
+  background-color: #fec5e5;
+  height: 20px;
+  align-items: center;
+  border: #f1f1f1;
+}
+
+.box:active {
+  background-color: #720041;
+  color: white;
+}
+
+.box:hover {
+  background-color: #720041;
+  color: white;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -526,6 +548,25 @@ img.img {
     bottom: 15px;
     left: 22px;
     background: currentColor;
+  }
+  .box {
+    display: flex;
+    padding: 15px;
+    width: max-content;
+    margin: 1px;
+    border-radius: 5px;
+    background-color: #fec5e5;
+    height: 20px;
+    align-items: center;
+    border: #f1f1f1;
+  }
+  .box:active {
+    background-color: #720041;
+    color: white;
+  }
+  .box:hover {
+    background-color: #720041;
+    color: white;
   }
   /* h1 {
     font-size: var(--step-5);
