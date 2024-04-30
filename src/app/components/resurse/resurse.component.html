@@ -2,14 +2,14 @@
   <ul>
     <li><a href="index.html">HOME</a></li>
     <li><a href="despre.html">DESPRE NOI</a></li>
-    <li class="dropdown">
+    <!-- <li class="dropdown">
       <span class="resurse_drop">RESURSE</span>
       <div class="dropdown-content">
         <a [routerLink]="['/jocuri']" style="color: black">Jocuri</a>
         <a [routerLink]="['/cantece']" style="color: black">Cantece</a>
         <a [routerLink]="['/lectii']" style="color: black">Competiții</a>
       </div>
-    </li>
+    </li> -->
     <li>
       <a href="https://chat.whatsapp.com/LPpV4iTnOXA0MN8j0263ST"
         >TE PUTEM AJUTA?</a
@@ -21,9 +21,7 @@
   <div class="semicerc"></div>
   <div class="nextpage">
     <div class="scris">
-      <a routerLink="jocuri">
-        <p>Jocuri</p>
-      </a>
+      <a [routerLink]="['/resurse', 'jocuri']"><p>Jocuri</p></a>
 
       <a routerLink="competitii">
         <p style="padding-left: 40px">Competitii</p>

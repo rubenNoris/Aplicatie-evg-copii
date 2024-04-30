@@ -10,11 +10,16 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'lectii', component: LectiiComponent },
-  { path: 'jocuri', component: JocuriComponent },
-  { path: 'cantece', component: CantececComponent },
-  { path: 'competitii', component: CompetitiiComponent },
-  { path: 'resurse', component: ResurseComponent },
+  {
+    path: 'resurse',
+    component: ResurseComponent,
+    children: [
+      { path: 'jocuri', component: JocuriComponent },
+      { path: 'competitii', component: CompetitiiComponent },
+      { path: 'cantece', component: CantececComponent },
+      { path: 'lectii', component: LectiiComponent },
+    ],
+  },
 ];
 
 @NgModule({
