@@ -195,6 +195,33 @@ p {
   margin-bottom: 10px;
 }
 
+.formular {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.input_edit {
+  height: 30px;
+}
+
+input {
+  border-radius: 5px;
+  background-color: rgba(240, 248, 255, 0.553);
+  border: 1px solid #ff1dce;
+}
+
+input:active {
+  border: 2px solid black;
+}
+
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
@@ -283,6 +310,11 @@ p {
     padding-left: 130px;
     padding-top: 50px;
     color: black;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
   }
   /* ::-webkit-scrollbar {
                         width: 1px;
