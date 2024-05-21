@@ -22,6 +22,8 @@ import { LectiiComponent } from './components/lectii/lectii.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ResurseComponent } from './components/resurse/resurse.component';
 import { HomeComponent } from './components/home/home.component';
+import { AccordionComponent } from './accordion/accordion.component';
+import { FilterComponent } from './filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { HomeComponent } from './components/home/home.component';
     HeaderComponent,
     ResurseComponent,
     HomeComponent,
+    AccordionComponent,
+    FilterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideClientHydration()],
