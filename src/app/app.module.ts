@@ -24,6 +24,9 @@ import { ResurseComponent } from './components/resurse/resurse.component';
 import { HomeComponent } from './components/home/home.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { FilterComponent } from './filter/filter.component';
+import { AccordionLComponent } from './accordion-l/accordion-l.component';
+import { AccordionCComponent } from './accordion-c/accordion-c.component';
+import { AccordionJComponent } from './accordion-j/accordion-j.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,9 @@ import { FilterComponent } from './filter/filter.component';
     HomeComponent,
     AccordionComponent,
     FilterComponent,
+    AccordionLComponent,
+    AccordionCComponent,
+    AccordionJComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideClientHydration()],

@@ -3,8 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-competitii',
   templateUrl: './competitii.component.html',
-  styleUrl: './competitii.component.css'
+  styleUrl: './competitii.component.css',
 })
-export class CompetitiiComponent {
-
-}
+export class CompetitiiComponent {}
