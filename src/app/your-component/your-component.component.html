@@ -1,0 +1,22 @@
+<div class="formular">
+  <h4>Aici veti putea adauga lectii noi:</h4>
+  <input
+    style="width: 150px"
+    type="text"
+    [(ngModel)]="adminCode"
+    (change)="checkCode()"
+    (click)="adminCode = ''"
+    [class.red]="isCodeIncorrect"
+    [class.hide]="isCodeValid"
+    placeholder="Codul de admin"
+  />
+  <br />
+  <div class="input" [class.display]="isCodeValid" [class.hide]="!isCodeValid">
+    <p>titlul:</p>
+    <input class="input_edit" type="text" maxlength="255" placeholder="Titlu" />
+    <p>Descriere:</p>
+    <form>
+      <textarea>Descrie</textarea>
+    </form>
+  </div>
+</div>

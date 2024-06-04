@@ -12,6 +12,7 @@ import {
   BrowserModule,
   provideClientHydration,
 } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'; // Asigură-te că ai importat FormsModule aici
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +28,7 @@ import { FilterComponent } from './filter/filter.component';
 import { AccordionLComponent } from './accordion-l/accordion-l.component';
 import { AccordionCComponent } from './accordion-c/accordion-c.component';
 import { AccordionJComponent } from './accordion-j/accordion-j.component';
+import { YourComponent } from './your-component/your-component.component'; // Asumând că your-component este numele componentei tale
 
 @NgModule({
   declarations: [
@@ -43,8 +45,9 @@ import { AccordionJComponent } from './accordion-j/accordion-j.component';
     AccordionLComponent,
     AccordionCComponent,
     AccordionJComponent,
+    YourComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
