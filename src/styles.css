@@ -119,18 +119,7 @@ html {
   height: max-content;
 }
 
-.panel {
-  padding: 0 18px;
-  max-height: 0;
-  transition: all 0.3s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.75);
-  overflow: hidden;
-  border-left: 5px solid #8e7ab5;
-  margin: 5px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  color: black;
-}
+/* În accordion.component.css */
 
 .accordion {
   background-color: #cccccc2d;
@@ -147,9 +136,29 @@ html {
   border-radius: 5px;
 }
 
-.active,
-.accordion:hover {
+.accordion:hover,
+.accordion.active {
   background-color: #cccccc2d;
+}
+
+/* În accordion.component.css */
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-left: 5px solid #8e7ab5;
+  margin: 5px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: black;
+}
+
+.panel.open {
+  max-height: 1000px;
+  /* Această valoare trebuie ajustată în funcție de conținutul maxim așteptat */
 }
 
 .filterDiv {
