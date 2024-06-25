@@ -7,12 +7,13 @@
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // import { ToastrModule } from 'ngx-toastr';
 
-import { NgModule } from '@angular/core';
+import { Injectable, NgModule } from '@angular/core';
 import {
   BrowserModule,
   provideClientHydration,
 } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; // Asigură-te că ai importat FormsModule aici
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { AccordionLComponent } from './accordion-l/accordion-l.component';
 import { AccordionCComponent } from './accordion-c/accordion-c.component';
 import { AccordionJComponent } from './accordion-j/accordion-j.component';
 import { YourComponent } from './your-component/your-component.component'; // Asumând că your-component este numele componentei tale
+import { Observable } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -47,8 +49,24 @@ import { YourComponent } from './your-component/your-component.component'; // As
     AccordionJComponent,
     YourComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+@Injectable({
+  providedIn: 'root',
+})
+export class SaleService {
+  private apiUrl = 'http://localhost:3000/sales';
+
+  constructor(private http: HttpClient) {}
+
+  getSales(): Observable<any> {
+    return this.http.get(this.apiUrl);
+  }
+
+  addSale(saleData: any): Observable<any> {
+    return this.http.post(this.apiUrl, saleData);
+  }
+}
