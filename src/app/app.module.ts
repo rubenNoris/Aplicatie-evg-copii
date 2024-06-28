@@ -13,7 +13,7 @@ import {
   provideClientHydration,
 } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; // Asigură-te că ai importat FormsModule aici
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,6 +31,7 @@ import { AccordionCComponent } from './accordion-c/accordion-c.component';
 import { AccordionJComponent } from './accordion-j/accordion-j.component';
 import { YourComponent } from './your-component/your-component.component'; // Asumând că your-component este numele componentei tale
 import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
