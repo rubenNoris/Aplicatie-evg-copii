@@ -11,7 +11,7 @@ app.use(cors());
 var CONNECTION_STRING =
   "mongodb+srv://noris:D0ar!u2004@aplicatie-copii.4w4lx8i.mongodb.net/?retryWrites=true&w=majority&appName=Aplicatie-Copii";
 
-var DATABASENAME = "todoappdb";
+var DATABASENAME = "appevgcopii";
 var database;
 
 app.listen(5038, () => {
@@ -32,7 +32,7 @@ app.get("/api/appevgcopii/GetNotes", (request, response) => {
 
 app.post("/api/appevgcopii/AddNotes", multer().none(), (request, response) => {
   database.collection("articles").count({}, function (error, numOfDocs) {
-    database.collection("articles").insertOane({
+    database.collection("articles").insertOne({
       id: (numOfDocs + 1).toString(),
       description: request.body.newNotes,
     });
