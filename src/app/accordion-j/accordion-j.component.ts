@@ -24,7 +24,7 @@ export class AccordionJComponent {
         participanți la joc nu au voie să depășească permietul hotărât de
         lideri. Pe parcurusul jocului copii pot fi motivați să incurajeze
         soricelul.`,
-      tags: ['tag1', 'tag2'],
+      tags: ['psc', 'ext', ''],
       isOpen: false,
     },
     {
@@ -273,7 +273,7 @@ export class AccordionJComponent {
     {
       id: 20,
       title: '19. Lovește genunchiul',
-      content:  ` Pentru acest joc va fi nevoie de scaune pentru toți copii și de un
+      content: ` Pentru acest joc va fi nevoie de scaune pentru toți copii și de un
       baston făcut din ziare. Jucătorii se vor așeza pe scaune formând un
       cerc, iar liderul va sta în picioare în mijloc. La început unul din
       copii va striga numele altuia. Jucătorul numit va trebui apoi să-și
