@@ -10,826 +10,429 @@ export class AccordionLComponent {
   accordions: any[] = [
     {
       id: 1,
-      title: '1. Lăudați pe Isus!',
-      content: ` /: /:Lăudaţi pe Isus! Lăudaţi pe Isus!
-      Cu braţ puternic El domneşte.
-      Lăudaţi pe Isus! Lăudaţi pe Isus! 
-      Suntem poporul ce-l iubeşte:/ Suntem
-      poporul Celui ce-a înviat El este Rege!
-      Isus ne-a salvat Şi din nou va spun
-      :/`,
+      title: '1.Moise - eliberatorul ales',
+      content: ` Exodul 1:11-2:1,
+        –> verset de memorat: 1 Ioan 1:8`,
       tags: ['tag1', 'tag2'],
       isOpen: false,
     },
     {
       id: 2,
-      title: '2. Mare Dumnezeu avem',
-      content: `/: Mare Dumnezeu avem :/
-      El e cel mai mare-n putere și-n splendoare, 
-      Mare Dumnezeu avem. 
-      
-      /: Mare Dumnezeu avem :/
-      Îngerii-n lumină, Lui I se închină 
-      Mare Dumnezeu avem
-      
-      Isus este Domnul domnilor şi-Mpăratul împăraţilor
-      El e cel mai mare-n slavă și-n splendoare, 
-      Mare Dumnezeu avem. `,
+      title: '2. Chemarea lui Moise',
+      content: `Exodul 2:10-4:18, Fapte 7:22-3,
+        Evrei 11:24-,
+        ->verset de memorat : 2 Samuel 22:31 `,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 3,
-      title: '3. Minunată-i dragostea lui Isus',
-      content: ` /: Minunată-i dragostea lui Isus x
-      E cea mai minunat
-    
-      Prea înaltă n-ajungi până su
-      Prea adâncă n-ajungi până jo
-      Prea lată nu poţi s-o cuprinz
-      Dragostea-i minunată :/`,
+      title: '3. Moise prezintă mesajul lui Dumnezeu',
+      content: ` Exodul 4:18-6,
+        -> Verset de memorat: Ieremia 17:7`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 4,
-      title: '4. Lăudați, copii, pe Domnul',
-      content: `Lăudați, copii,pe Domnu
-      Lăudăm ,lăudă
-      Și cântați al Lui sfânt Nume
-      Îl cântam , îl cântă
-    
-      Câmp cu flori și cer cu stele
-      Fluturași mii și mii
-      Păsări ,roade,toate cel
-      Le-a făcut ,El ,copii
-    
-      Lăudați, copii,pe Domnu
-      Lăudăm ,lăudă
-      Și-nvățați din Cartea sfânt
-      Învățăm ,învățăm!
-    
-      Lăudați, copii,pe Domnu
-      Lăudăm ,lăudă
-      Și-ascultați ce El vă cere
-      Ascultăm ,ascultăm `,
+      title: '4. Moise vede puterea lui Dumnezeu',
+      content: `Exodul 7:1-12:,
+        -> verset de memorat: Galateni 4:31 `,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 5,
-      title: '5. Dă-i povara ta lui Isus',
-      content: ` /: Dă-i povara ta lui Isu
-      El o va purta :/
-    
-      /: Şi înalţă tot mai sus înalţ
-      Şi înalţă numele lui Isus :/
-    
-      /: Şi zdrobeşte pe satan
-      În picioare jos:/
-    
-      /: Vin la Isus cu căinț
-      El te va ierta. :/ `,
+      title: '5. Trecerea triumfală',
+      content: `Exodul 13:17-15:,
+        -> Verset de memorat: Matei 28:20 `,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 6,
-      title: '6. Toate poverile mele-au căzut',
-      content: ` Toate poverile mele-au căzu
-      /: Rostogolindu-se :/
-      Toate poverile mele- au căzu
-      La crucea lui Isu
-    
-      Pacea inundă azi inima me
-      /: Inima mea :/
-      Pacea inundă azi inima me
-      Prin crucea lui Isu
-    
-      Ca un torent bucuria ţâşn
-      /:În inima mea :/
-      Ca un torent bucuria ţâşn
-      La crucea lui Isus.`,
+      title: ' 6. Oamenii se plâng, Dumnezeu le poartă de grijă',
+      content: ` Exodul 15:22-17:,
+        -> Verset de memorat: Psalmul 37:4`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 7,
-      title: '7. Al bucuriei steag flutură în orice zi',
-      content: `     /: Al bucuriei steag flutură în orice zi
-      Pe castelul inimii, flutură în orice zi
-      Al bucuriei steag flutură în orice zi
-      Pentru că Isus e regele meu
-    
-      /: Lasă steagul să fluture acolo sus
-      Toata lumea să-l vadă pe Isus
-      Lasă steagul să fluture pe castel
-      Pentru că Isus e regele meu. :/ :/ `,
+      title: '7. Dumnezeu vorbește la Sinai',
+      content: `     - Exodul 17:1-7, Exodul 19,,
+        -> Verset de memorat: Luca 11:28 `,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
-      id: 8,
-      title: '8. Cine a creat stelele pe cer',
-      content: `Cine a creat stelele pe cer, stelele, stelele
-      Cine a creat stelele pe cer? Domnul Dumnezeu
-    
-      - Cine a creat păsărea să zboare ...
-      - Cine a creat peştele să-noate ..
-      - Cine ne-a creat pe noi pe toţi ... `,
-      tags: ['tag2', 'tag3'],
-      isOpen: false,
+      "id": 8,
+      "title": "8. Idolatria poporului Israel",
+      "content": [
+        "Exodul 24:12- 13:1",
+        "Exodul 31:18",
+        "Exodul 32, 34",
+        "-> Verset de memorat: Psalmul 51:4"
+      ],
+      "tags": ["tag2", "tag3"],
+      "isOpen": false
     },
+    
+    
+    
+    
     {
       id: 9,
-      title: '9. Când mă rog Domnul răspunde, da',
-      content: `3x/:Când mă ro
-      Domnul răspunde: Da
-      Uneori El răspunde: aşteaptă
-      Alteori spune
-      Nu, pentru că mă iubeşte
-      Da eu ştiu că El răspunde când mă rog:/ 3`,
+      title: '9. Explorarea țării promise',
+      content: `Numeri 13, 14  Deuteronomul 1:19 --> verset de memorat:
+        Isaia 63:1`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 10,
-      title: '10. Isus este calea, adevărul şi viaţa',
-      content: ` Isus este calea, adevărul şi viaţa - 3 or
-      Viaţa, adevărul, Isus este calea`,
+      title: '10. Moise păcătuiește împotriva lui Dumnezeu',
+      content: ` Numeri 20 -> Verset de memorat: 1 Ioan 4:4b`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 11,
-      title: '11. Am bucurie ca fântâna',
-      content: ` 1.Am bucurie ca fântână, am bucurie ca fântână
-      Am bucurie ca fântână în inima mea
-      Am bucurie ca fântână, am bucurie ca fântână
-      Am bucurie ca fântână în inima mea
-    
-      2. Am o pace ca o mare .....
-      3. Am iubire ca un fluviu .....
-    
-      DE CE
-      Fiindcă Isus e cu mine - 3 or
-      E-n inima mea
-    
-      Fiindcă Isus mă iubeşte - 3 or
-      E-n inima mea`,
+      title: '11. Șarpele de aramă',
+      content: ` Numeri 21:1-9,Ioan 3:1-16-> Verset de memorat: Ioan 6:47`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 12,
-      title: '12. Am bucurie mare bucurie în inima',
-      content: `Am bucurie mare bucurie în inim
-      Unde? în inima, unde? în inima
-      Am bucurie mare bucurie în inima`,
+      title: '12. Moise și schimbarea la față',
+      content: `Numeri 27:12-23,
+        Deuteronomul 31:1-8,11-12,
+        Deuteronomul 34,
+        Luca 9:28-36-> verset de memorat: Psalmul 100:5a`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 13,
-      title: '13. Domnul mare e',
-      content: `:/Domnul mare e, puternic şi tare
-      Nimic nu-i prea greu pentru El :
-      Și munţii-s a Lui şi apele toat
-      Stelele-s creaţia Sa
-      Domnul mare e, puternic şi tare
-      Nimic nu e prea greu pentru El`,
+      title: '13. Iosua este ales de Dumnezeu să conducă poporul',
+      content: `Numeri 27:15-23,
+        Deuteronom 31:7,
+        Deuteronom 34:9,
+        Iosua 1:1-18--> Verset de memorat: Iosua 1:9`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 14,
-      title: '14. Isus iubeşte pe fiecare',
-      content: `Isus iubeşte pe fiecare, pe fiecare, pe fiecare
-      Isus iubeşte pe fiecare
-      Isus iubeşte pe toţi
-    
-      Iubeşte copiii, iubeşte părinţii
-      Iubeşte copiii şi iubeşte părinţii
-      Mă iubeşte pe mine
-      Te iubeşte pe tin
-      Isus iubeşte pe toţi`,
+      title: '14. Funia cărămizie la fereastră',
+      content: `Iosua 2:1-24-> Verset de memorat: Romani 8:1`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 15,
-      title: ' 15. Calea ce duce sus în ceruri',
-      content: `Calea ce duce sus în cerur
-      Este doar Isus Hristos
-      Calea spre Tatăl, spre bucuri
-      Este doar Isus Hristos
-    
-      Nici o altă cale
-      Nici o altă cale
-      Nu are omul păcătos
-      Calea ce duce sus în cerur
-      Este doar Isus Hristos  `,
+      title: ' 15. Căderea Ierihonului',
+      content: `Iosua 3, 4:1-18,
+        Iosua 5:13-16:27-> Verset de memorat: Psalmul 118:15`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 16,
-      title: '16. Este viu, este viu',
-      content: ` Este viu, este viu, aleluia, Domnul Isus e viu aleluia
-      Sărbătoare e în toată lumea, azi din morţi a-nviat nemurirea
-      Aleluia .......`,
+      title: '16. Păcatul lui Acan',
+      content: ` Iosua 7:1-26-> Verset de memorat: 1 Petru 1:16`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 17,
-      title: '17. În mâna Lui',
-      content: `El ţine universul în mâna Lui
-      El ţine universul în mâna Lui
-      El ţine uinversul în mâna Lui
-      El ţine toate-n mâna Sa
-    
-      El ţine şi copiii ....
-      El ţine și părinții ...
-      El ţine grădiniţa ..`,
+      title: '17. Povestirea despre gabaoniți',
+      content: `EIosua 9:1-10:27-> Verset de memorat: Proverbe 3:5`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 18,
-      title: '18. Iubirea lui Isus e aşa de mare',
-      content: `Iubirea lui Isus e aşa de mare, aşa de mare, aşa de mare
-      Iubirea lui Isus e aşa de mare ea este pentru noi`,
+      title: '18. Iosua își ia rămas bun de la popor',
+      content: `Numeri 13:17-33,
+        Iosua 14:1-15,
+        Iosua 23:1-24:26-> Verset de memorat: recapitulare 1 Petru 1:16,
+        Proverbe 3:5`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 19,
-      title: '19. De e vânt sau de-i furtună',
-      content: `De e vânt sau de-i furtun
-      Domnul este-n jurul meu. - Da
-      El e mare eu sunt slab, dar m-ajută ca să cresc.
-      De e vânt sau de-i furtună, Domnul este-n jurul meu `,
+      title: '19. Israel își calcă promisiunea',
+      content: `Iosua 24,
+        Judecători 1, 2:1-23-> Verset de memorat: Matei 22:37`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 20,
-      title: '20. Ai grijă ochii micuţi unde priveşti',
-      content: ` Ai grijă ochii micuţi unde priveşti
-      Ai grijă ochii micuţi unde priveşti
-    
-      Căci părintele de sus, te priveşte ne-ncetat
-      Ai grijă ochii micuţi unde priveşti
-    
-      - Ai grijă gură mică ce vorbeşti ..
-      - Ai grijă urechiusă ce asculţi ..
-      - Ai grijă mână mică ce lucrezi ..
-      - Ai grijă picioruş unde păşeşti .. `,
+      title: '20. Debora și Barac eliberează Israelul',
+      content: ` Judecători 4:1-24, 5:1-31-> Verset de memorat: Psalmul 103:19 `,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 21,
-      title: '21. Fiindc-atât de mult a iubit Dumnezeu lumea',
-      content: ` Fiindc-atât de mult a iubit Dumnezeu lumea
-      Că a dat pe singurul Lui Fiu
-      Ca oricine crede-n El să nu piară
-      Ci să aibă viaţă veşnică`,
+      title: '21. Ghedeon învață să fie curajos pentru Dumnezeu',
+      content: ` Judecători 6:1-40-> Verset de memorat: Iacov 4:7-8`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 22,
-      title: '22. Eu sunt mic dar Isus',
-      content: ` Eu sunt mic dar Isus locuieşte-n viaţa me
-      şi nimeni nu poate să-mi-l ia. - 2 or
-    
-      Când privesc în zori o floare ce se-naltă către soare
-      Îl simt cât de bun e Isus
-      Cum că El i-a dat culoare şi lumină de la soare
-      Ce minunat e Isus `,
+      title: '22. Ghedeon și cei 300 împotriva madianiților',
+      content: ` Judecători 7:1-25, 8:22-23,28-> verset de memorat: 2 Timotei 4:7`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 23,
-      title: '23. O, Doamne bun Părinte',
-      content: ` O, Doamne, bun Părinte
-      Aș vrea să-Ți mulțumes
-      De soare, ploaie, pâin
-      Ce zilnic le primesc
-      De harul Tău cel mare
-      De sângele-Ți vărsa
-      Curat prin El cu Tin
-      Trăi-voi ne-ncetat `,
+      title: '23. Dumnezeu îl alege pe Samson',
+      content: `Judecători 13:15-20-> verset de memorat: Psalmul 40:5`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 24,
-      title: '2. Mare Dumnezeu avem',
-      content: ` Într-un sat ne-nsemnat din Iudeea
-      Într-o iesle din Betlee
-      S-a născut aşteptatul Mesia
-      Să-i cântăm cu îngerii în cor
-    
-      Refren: Cânt Osana, cânt Osana, cânt Osana rege al regilor
-      Cânt Osana, cânt Osana, cânt Osana regelui
-    
-      Părăsiţi turma voastră-n câmpie
-      Alergaţi umiliţi la El
-      El este singura bucuri
-      Pentru prinţ şi pentru cerşetor`,
+      title: '24. Samson și Dalila',
+      content: ` Judecători 16:4-31-> Verset de memorat: Evrei 12:1`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 25,
-      title: '25. Isus, Nume Preaiubit',
-      content: `Isus, Nume Preaiubit, Mântuitor Sfânt
-      Din ceruri coborât
-      Emanuel, Fiul Lui Dumnezeu
-      Tu eşti Mesia
-      Eşti Domnul meu `,
+      title: '25. Israel alege un împărat',
+      content: `1 Samuel 8-10-> Verset de memorat: Psalmul 23:1`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 26,
-      title: ' 26. Fiecare zi îmi place s-o trăiesc',
-      content: `Fiecare zi îmi place s-o trăies
-      Cu dorința de a ajuta
-      Iar atunci cand mi se pare că e greu
-      Îmi amintesc versetul minuna
-    
-      /: Pot, pot, pot, eu pot totul în Cristos
-      Pot, pot, pot, să am caracter frumos
-      Pot, pot, pot, luminând în jurul me
-      Să-L vadă-n mine toți pe Dumnezeu :/
-    
-      Dacă vreun coleg la școală m-a jignit
-      Eu nu îi răspund cu-același fel
-      Îi zâmbesc și-i spun frumos să fi iubi
-      Și-ncerc să mă împrietenesc cu e
-    
-      Tot ce fac în viață-i prin puterea Lui
-      El îmi dăruiește dimineți `,
+      title: ' 26. Neascultarea lui Saul',
+      content: `1 Samuel 12-15-> Verset de memorat: Psalmul 23:2`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 27,
-      title: '27. Pas cu pas, zi de zi',
-      content: ` /: Pas cu pas, zi de z
-      Cu Isus noi mergem bucuroși pe dru
-      Pas cu pas, zi de z
-      Isus e calea către cer. :/
-    
-      El e adevăru
-      Îl urmăm doar pe Isu
-      Oricât de greu e drumu
-      El ne va duce su
-    
-      Singuri nu vom merg
-      El mereu cu noi va f
-      Oriunde ne va duc
-      Vrem și noi cu El să fi`,
+      title: '27. Dumnezeu alege un împărat',
+      content: ` 1 Samuel 16-> Verset de memorat: Psalmul 23:3`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 28,
-      title: '28. Domnul mă păzește',
-      content: `Domnul mă păzește
-      Oriunde aș f
-      Domnul mă iubește
-      Și-mi dă bucurii
-    
-      Chiar de sunt singur nu mă te
-      Căci Domnul e cu min
-      El mă păzește de-orice rău
-      Și Mâna Lui mi-ntinde
-    
-      Domnul mă ajută
-      Când eu zic că-i greu
-      El îmi dă putere
-      Știe gândul meu
-    
-      Chiar de sunt singur nu mă te
-      Căci Domnul e cu min
-      El mă ajută când mi-e gre
-      Și Mâna Lui mi-ntinde
-    
-      Domnul meu mă vede
-      Când sunt întrista
-      Mâna-Și va ating
-      Și sunt mângâiat
-    
-      Chiar de sunt singur nu mă te
-      Căci Domnul e cu min
-      Știu că mă vede ochiul Său
-      Și Mâna Lui mi-ntinde`,
+      title: '28. David și Goliat',
+      content: `1 Samuel 17:1-54
+        -> Verset de memorat: Psalmul 23:4`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 29,
-      title: '29. Isus e-n cer și El mă vede',
-      content: `Isus e-n cer și El mă ved
-      Nu pot să păcătuiesc
-      Isus e-n cer și El mă ved
-      De El trebuie să mă tem
-    
-      Ochii Lui văd tot pământul
-      Nu pot să păcătuies
-      Ochii Lui văd tot pământul
-      De El trebuie să mă tem
-    
-      Isus din ceruri a veni
-      La Golgota El s-a jertfi
-      El de sub lege m-a scolariăpa
-      Pe veci ca să fiu iertat
-    
-      Când voi ajunge-n ceruri su
-      Voi fi în slavă cu Isus
-      Cu îngerii Îi voi cânt
-      Pe veci doar: Aleluia
-      15 /: Dă-i povara ta lui Isu
-      El o va purta :/
-    
-      /: Şi înalţă tot mai sus înalţ
-      Şi înalţă numele lui Isus :/
-    
-      /: Şi zdrobeşte pe satan
-      În picioare jos:/
-    
-      /: Vin la Isus cu căinț
-      El te va ierta. :/ `,
+      title: '29. Un prieten și un dușman',
+      content: `1 Samuel 18:1-16, 19:1-10,
+        1 Samuel 20-> Verset de memorat: Psalmul 23:5`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 30,
-      title: '30. Îmi amintesc s-a născut pentru mine',
-      content: ` Îmi amintesc s-a născut pentru mine
-      Nicicând înapoi nu voi da. - 2 or
-    
-      Refren: Nu, nu, nu, nu, nu
-      Nicicând înapoi nu voi da. - 2 or
-    
-      Îmi amintesc - a trăit .....
-      - a murit ....
-      - s-a nălţat .... `,
+      title: '30. David își cruță dușmanul',
+      content: `  1 Samuel 21:1-22:2,
+        1 Samuel 22:17-19,
+        1 Samuel 23:1-24:22,
+        1 Samuel 26:1-25-> Verset de memorat: Psalmul 23:6`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 31,
-      title: '31. O uşă numai una',
-      content: `O uşă, numai una, şi are două părţ
-      Înăuntru ori afară, unde te-afli tu?
-      O uşă, numai una, şi are două părţ
-      Eu sunt deja înăuntru, unde te-afli tu
-    
-      O Carte numai una, Tatăl sfânt ne-a dat
-      Sfânta Carte adevarată, pe toţi ne-a salvat
-      O Carte numai una, Tatăl sfânt ne-a dat
-      Vrei s-o crezi şi tu`,
+      title: '31. David în fața filistenilor',
+      content: ` 1 Samuel 27:1-7,
+        1 Samuel 28:1-2,
+        1 Samuel 29:1-11,
+        1 Samuel 30:1-19, -> Verset de memorat: recapitulare Psalmul 23`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 32,
-      title: '32. Domnul e bun',
-      content: `Domnul e bun, Domnul e bun, Domnul e bun
-      El e bun cu mine
-    
-      El a murit, El a murit, El a murit
-      Pentru al meu păcat
-    
-      Liber sunt azi, liber sunt azi, liber sunt azi
-      De mă-ncred în El
-    
-      Domnul e bun
-      El a murit
-      Liber sunt az
-      El cu mine-I bun`,
+      title: '32. Saul merge la o ghicitoare',
+      content: ` 1 Samuel 28:1-25,
+        1 Samuel 31:1-7,
+        2 Samuel 1:12,17-27
+        -> verset de memorat: Leveticul 19:31n`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 33,
-      title: '33. Fii viteaz',
-      content: ` Fii viteaz, fii viteaz
-      Fii tare, fii tare
-      Căci Domnul Dumneze
-      E cu tine mereu
-      Nu am nici o frică, nu mă descurajez
-      Căci eu stau în credinţă să biruiesc
-      Hai să stăm în credinţă să biruim
-      Căci Domnul, Dumnezeu e cu tine`,
+      title: '33. David ajunge împărat după cum a spus Dumnezeu',
+      content: ` 2 Samuel 2:1-4,8-10,
+        2 Samuel 3:1,
+        6-12, 17-39,
+        2 Samuel 4:5-7, 2 Samuel 5:1-12,
+        2 Samuel 7:1-13-> Verset de memorat 1Petru 5:6`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 34,
-      title: '34. O carte am în gând',
-      content: `O carte am în gân
-      Nu-i alta pe pămân
-      /:Ce viață-mi dă când citesc în ea
-      E cartea Biblia:
-    
-      Din Biblie cites
-      Cum trebuie să trăies
-      /:Curat și sfânt în fapt și gân
-      Pe Domnul lăudând:`,
+      title: '34. Chivotul legământului este recuperat și adus înapoi',
+      content: ` 1 Samuel 4:2-11,
+        1 Samuel 5:1-6:21,
+        2 Samuel 6:1-19,Numeri 4:5,15,20-> Verset de memorat: Isaia
+        55:8`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 35,
-      title: ' 35. Măreț ești Dumnezeul meu',
-      content: ` /: Măreţ eşti Dumnezeul me
-      Al meu suflet se bucură de-a Ta prezenţ
-      Măreţ eşti Dumnezeul me
-      Al meu suflet te laudă mere
-      Măreţia Ta pe noi ne-a cuprin
-      În al Tău nume Hristos moartea a învin
-      Îndurarea Ta-i peste noi mere
-      /: Măreţ eşti Dumnezeul :/ :/ `,
+      title: ' 35. David și Bat-Șeba',
+      content: ` 1 Samuel 11:1-27,
+        2 Samuel 12:1-24-> Verset de memorat: 1 Timotei 5:22b `,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 36,
-      title: '36. Doamne noi copiii Te-nălțăm prin cânt',
-      content: ` /: Doamne noi copiii Te-nălțăm prin cân
-      Și mărim în lume Numele Tău sfânt :/
-    
-      /: Laude și cinste prin cântări Îți dă
-      Doamne, Domnul slavei, noi Te lăudăm :/
-    
-      /: Crește-ne credința ca să te-ascultă
-      Gura ne-o sfințește slavă să Îți dăm :/
-    
-      /: Tu ești Tatăl nostru, noi ai Tăi sunte
-      Și-orice daruri bune de la Tine-avem :/
-    
-      /: Mulțumim de toate câte tu ne-ai da
-      Fi prin cântul nostru Doamne lăudat :`,
+      title: '36.  David și Mefiboșet',
+      content: `  2 Samuel 4:4,
+        2 Samuel 9:1-13,
+        2 Samuel 16:1-4,
+        2 Samuel 19:15, 
+        24-30 ->Verset de memorat: Psalmul 27:1`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 37,
-      title: '37. Pentru soare-Ţi mulţumim',
-      content: `Pentru soare-Ţi mulţumim
-      Pentru lumina cerului seni
-      Îţi mulţumim şi pentru albele culor
-      Că ele plouă pe ogor
-    
-      Îţi mulţumim şi Te slăvi
-      Că tot ce-i bun în dar primi
-      Îţi mulţumim şi Te mări
-      Doamne Isuse-Ţi mulţumi
-    
-      Pentru stele-Ţi mulţumi
-      Că luminează noaptea când dormi
-      Îţi mulţumim şi pentru pacea T
-      Ce ne mângâie inima
-    
-      Pentru apă-Ţi mulţumi
-      Ea ne adapă fără să plăti
-      Îţi mulţumim că aerul cura
-      E-aşa de bun de respira
-    
-      Pentru tot ce-n dar primi
-      Doamne Isuse vrem să-Ţi mulţumi
-      Îţi mulţumim că veşnic ne iubeşt
-      Şi sus în ceruri ne primeşti`,
+      title: '37. Solomon-succesorul lui David la tron',
+      content: ` 1 Cronici 22:2-23:5,
+        2 Samuel 7:11b-29,
+        1 Împărați 1:3,34,
+        1 Împărați 2:1-4,
+        2 Cronici 29:28,
+        Luca 1:26-33,
+        Luca 11:31,
+        Zaharia 14:9,
+        Apocalipsa 11:15->Verset de memorat: recapitulare versete`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 38,
-      title: ' 38. Poţi să fii şi tu un copil care să te rogi',
-      content: `Poţi să fii şi tu un copil care să te rogi /x
-      /: Să te pleci în genunchi,să ridici privirea-n su
-      Şi să vii cu umilinţă înaintea lui Isus! :/
-    
-      Poţi să fii şi tu un copil care să asculţi /x
-      /: De părinţi şi de bunici,de fraţi şi de suror
-      Şi Domnului Isus să-I fii ascultător :/
-    
-      Poţi să fii şi tu un copil care să ajuţi /x
-      /: Să hrăneşti pe cel flămând,să îmbraci pe cel săra
-      Şi să-ndrepţi la mântuire pe cei ce merg înspre iad:/ `,
+      title: ' 38. Ilie aduce o veste înspăimântătoare',
+      content: `1 Împărați 17:1-16<br />-> Verset de memorat: 1 Cronici 29:11 `,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 39,
-      title: '39. Roagă-te dimineaţa',
-      content: ` 1. Roagă-te dimineaţa, roagă-te şi la prânz
-      Roagă-te pe-nserate, roagă-te orişicân
-    
-      2. Citeşte ....
-      3. Fă bine ... `,
+      title: '39. Ilie luptă împotriva dumnezeului fals',
+      content: ` 1 Împărați 18:1-2,<br />
+        17-46 <br />-> Verset de memorat: Isaia 44:6 `,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 40,
-      title: '40. Citeşte Biblia, roagă-te mereu',
-      content: `(Varianta 1
-      Citeşte Biblia, roagă-te mereu, roagă-te mereu, roagă-te mereu
-      Citeşte Biblia roagă-te mereu, dacă vrei să creşti
-    
-      (Varianta 2
-      Citește Biblia în fiecare zi, în fiecare zi, in fiecare zi
-      Citește Biblia în fiecare zi
-      Dacă vrei să crești
-    
-      Roagă-te în fiecare zi, în fiecare zi, în fiecare zi
-      Roagă-te în fiecare zi
-      Dacă vrei să crești
-    
-      Ascultă în fiecare zi, în fiecare zi, în fiecare zi
-      Ascultă în fiecare zi
-      Dacă vrei să crești`,
+      title: '40. Ilie fuge de împărăteasa Izabela',
+      content: `(1 Împărați19:1-21<br />-> Verset de memorat: Psalmul 145:8`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 41,
-      title: '41. Mare este marea',
-      content: `Mare este marea
-      Înalt este cerul de sus
-      Dar mai mare ca toate e
-      Iubirea lui Isus
-    
-      Eu sunt un nevrednic
-      El pentru mine a murit
-      Sfântul Cuvânt
-      Mie-mi spune mere
-      Domnul m-a iubit`,
+      title: '41. Ilie și via lui Nabot',
+      content: `1 Împărați 21:1-26<br />-> Verset de memorat: Deuteronom 32:4`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 42,
-      title: '42.O be careful little eyes',
-      content: ` O be careful little eyes what you see,
-      O be careful little eyes what you see,
-      For the Father up above is looking down in love,
-      So be careful little eyes what you see.
-    
-      O be careful little ears what you hear ...
-    
-      O be careful little tongue what you say 
-    
-      O be careful little hands what you do ...
-    
-      O be careful little feet where you go ...
-    
-      O be careful little heart whom you trust ...
-    
-      O be careful little mind what you think ...`,
+      title: '42.Ilie este luat la cer',
+      content: ` 2 Împărați 2:1-15<br />-> Versetul de memorat: Psalmul 32:8`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 43,
-      title: '43.Jesus loves the little ones',
-      content: `Jesus loves the little ones like me, me, me.
-      Jesus loves the little ones like me, me, me.
-      Little ones like me sat upon His knee,
-      Jesus loves the little ones like me, me, me.
-      Jesus loves the little ones like you, you, you.
-      Jesus loves the little ones like you, you, you.
-      Little ones like you, saves them through and through,
-      Jesus loves the little ones like you, you, you.`,
+      title: '43.Ilie vorbește cu Domnul Isus',
+      content: `Matei 17:1-8,<br />
+        Marcu 9:2-8<br />-> Verset de memorat: recapitulare versete`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 44,
-      title: '44. If you’re happy',
-      content: ` If you’re happy and you know it, clap your hands,
-      If you’re happy and you know it, clap your hands,
-      If you’re happy and you know it, then your face will surely show it.
-    
-      If you’re happy and you know it, clap your hands.
-    
-      If you’re happy and you know it, stamp your feet,
-      If you’re happy and you know it, stamp your feet,
-      If you’re happy and you know it, then your face will surely show it.
-    
-      If you’re happy and you know it, stamp your feet.`,
+      title: '44. Începutul lucrării lui Elisei',
+      content: ` 2 Împărați 2:13-25<br />-> Verset de memorat: Galateni 6:9`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 45,
-      title: '45.My God is so big, so strong and so mighty',
-      content: `My God is so big, so strong and so mighty,
-      There’s nothing my God cannot do.
-      My God is so big, so strong and so mighty,
-      There’s nothing my God cannot do.
-      The mountains are His, the valleys are His,
-      The stars are His handiwork too.
-      My God is so big, so strong and so mighty,
-      There’s nothing my God cannot do. `,
+      title: '45.Minunea cu uleiul din vasul văduvei',
+      content: `2 Împărați 4:1-7<br />-> Verset de memorat: Filipeni 4:19`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 46,
-      title: ' 46. I am the way, the truth and the life',
-      content: `“I am the way, the truth and the life”, that’s what Jesus said.
-    
-      “I am the way, the truth and the life”, that’s what Jesus said.
-      Without the way there is no going, without the truth there is no knowing,
-    
-      Without the life there is no growing.
-      “I am the way, the truth and the life”, that’s what Jesus said.
+      title: ' 46. Învierea fiului sunamitei',
+      content: `“2 Împărați 4:8-37<br />-> Verset de memorat: Luca 18:27
     `,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 47,
-      title: '47. Joy, joy my heart is full of joy',
-      content: `Joy, joy my heart is full of joy,
-      Joy, joy my heart is full of joy.
-      My Saviour dear is ever near,
-      that’s the reason why my heart is full of joy.
-    
-      Peace, peace my heart is full of peace,
-      Peace, peace my heart is full of peace,
-      My Saviour dear is ever near,
-      that’s the reason why my heart is full of peace.`,
+      title: '47. Vindecarea lui Naaman de lepră',
+      content: `2 Împărați 5:1-16<br />-> Verset de memorat: 1 Ioan 1:9`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 48,
-      title: '48. He has made me glad, He has made me glad',
-      content: `He has made me glad, He has made me glad.
-      I will rejoice for He has made me glad.
-      He has made me glad, He has made me glad.
-      I will rejoice for He has made me glad.`,
+      title: '48. Orbirea sirienilor și conducerea lor în Samaria',
+      content: `2 Împărați 6:8-23<br />-> Verset de memorat: recapitulare versete`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 49,
-      title: '49. He’s got the whole world in His hands',
-      content: `He’s got the whole world in His hands, (4 times)
-    
-      He’s got you and me in His hands, (4 times)`,
+      title: '49. Împresurarea Samariei+ Fuga filistenilor',
+      content: `2 Împărați 6:24-7:1-16<br />-> Verset de memorat: recapitulare versete`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 50,
-      title: '50. The Lord is so good',
-      content: `The Lord is so good, the Lord is so good,
-      The Lord is so good, He’s so good to me.
-    
-      He died for me, He died for me,
-      He died for me, on Calvary.
-    
-      Now I am free, Now I am free,
-      Now I am free, He’s so good to me.`,
+      title: '50. Estera ajunge împărăteasă',
+      content: `2 Împărați 24:10-25:30,<br />
+        Estera 1:1-2:20<br />-> verset de memorat: Ieremia 29:11`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 51,
-      title: '51. Wide, wide as the ocean',
-      content: `Wide, wide as the ocean,
-      High as the heavens above.
-      Deep, deep as the deepest sea,
-      Is my Saviour’s love.
-      I though so unworthy,
-      Still I’m a child of His care.
-      For His Word teaches m
-      That His love reaches me, everywhere.`,
+      title: '51. Mardoheu este neclintit în hotărârea lui',
+      content: `Estera 2:21-4:3<br />->Verset de memorat: Faptele Apostolilor 5:29`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
     {
       id: 52,
-      title: '52. Read your Bible, pray every day',
-      content: `Read your Bible, pray every day,
-      Pray every day, pray every day.
-      Read your Bible, pray every da
-      If you want to grow.
-      If you want to grow, If you want to grow.
-      Read your Bible pray every da
-      If you want to grow.`,
+      title: '52. Un strigăt după ajutor',
+      content: `Estera 3:15b-5:2<br />->Verset de memorat: Psalmul 34:15`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },

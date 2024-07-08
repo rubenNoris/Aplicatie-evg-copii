@@ -25,7 +25,7 @@ export class AccordionJComponent {
         participanți la joc nu au voie să depășească permietul hotărât de
         lideri. Pe parcurusul jocului copii pot fi motivați să incurajeze
         soricelul.`,
-      tags: ['psc', 'ext', ''],
+      tags: ['presc', 'ext', 'act', 'fm', 'scolari'],
       isOpen: false,
     },
     {
@@ -33,7 +33,7 @@ export class AccordionJComponent {
       title: '2. Rațele și vânătorii',
       content: `Se formează o linie cu toți copii, iar 2 lideri sunt ori în față ori in
         spatele copiilor, se aruncă cu mingea spre copii cine este atins iese.`,
-      tags: ['tag2', 'tag3'],
+      tags: ['presc', 'scolari'],
       isOpen: false,
     },
     {
@@ -44,7 +44,7 @@ export class AccordionJComponent {
         invers. Liderii au rolul de a arunca pe jos câte o minge, in acest timp
         copii aleargă, iar in dreptul mingii trebuie să sară peste ea. Cine este
         atins iese`,
-      tags: ['tag2', 'tag3'],
+      tags: ['presc', 'scolari'],
       isOpen: false,
     },
     {
@@ -53,7 +53,7 @@ export class AccordionJComponent {
       content: ` Se face un cerc cu copii, in centru este un lider ce va învârti sacul cu
         mingea legata de se sfoară, la firul ierbii. Copii trebuie să sară peste
         minge, cine este atins iese.`,
-      tags: ['tag2', 'tag3'],
+      tags: ['int', 'ext', 'act', 'presc', 'scolari'],
       isOpen: false,
     },
     {
@@ -63,7 +63,7 @@ export class AccordionJComponent {
         zboară" și va da exemplu de un obiect ori care zboară ori care nu
         zboară, dacă acel obiect zboară, copii trebuie să ridice o mână, dacă
         nu, nu trebuie. Cine greșește iese `,
-      tags: ['tag2', 'tag3'],
+      tags: ['int', 'ext','act','toti','presc'],
       isOpen: false,
     },
     {
@@ -74,7 +74,7 @@ export class AccordionJComponent {
         sforii iar cand liderul anunța o altă zonă ei trebuie să sară peste
         sfoară in locul corect, dacă in stânga e cer să se ducă acolo. Cine
         greșește, sau ultimul care ajunge in partea corectă este eliminat.`,
-      tags: ['tag2', 'tag3'],
+      tags: ['toti', 'ext','act', 'scolari','gim'],
       isOpen: false,
     },
     {
@@ -84,7 +84,7 @@ export class AccordionJComponent {
         incepe muzica, copii se învârt in jurul scaunelor, in momentul opririi
         muzicii copii trebuie să se așeze pe scaun, cine rămâne fara scaun iese
         afară. `,
-      tags: ['tag2', 'tag3'],
+      tags: ['toti', 'int','ext', 'act','scolari','gim'],
       isOpen: false,
     },
     {
@@ -94,7 +94,7 @@ export class AccordionJComponent {
         ochiul meu ceva roșu" sau orice altă culoare, copii trebuie să
         identifice in jurul lor obiectul ales de lider. Rolurile se pot schimba
         in functie de câștigător. `,
-      tags: ['tag2', 'tag3'],
+      tags: ['toti', 'int','ext', 'act','presc'],
       isOpen: false,
     },
     {
@@ -105,7 +105,7 @@ export class AccordionJComponent {
         echipa ce a fost aleasă fuge in fata si inconjoara cercul, cealalta
         invers inconjoara cercul, echipa ce ajunge prima la locul gol ramas,
         ramane in cerc, si echipa rămasă repetă procesul`,
-      tags: ['tag2', 'tag3'],
+      tags: ['toti', 'ext','act', 'scolari','presc','echipe'],
       isOpen: false,
     },
     {
@@ -119,7 +119,7 @@ export class AccordionJComponent {
         Cine aplauda cand liderul nu are mainile una in dreptul celeilalte va
         iesi, sau copilul care va fi mai lent poate fi si el eliminat. Castiga
         cine ramane ultimul`,
-      tags: ['tag2', 'tag3'],
+      tags: ['toti', 'ext','act','echipe', 'scolari','presc'],
       isOpen: false,
     },
     {
@@ -141,7 +141,7 @@ export class AccordionJComponent {
         alesi sunt identificati, ori cand cheile reusesc a fi luate si copilul
         ce le-a luat se si intoarce in cerc, sau jocul se poate incheia atunci
         cand regurile nu se respecta.`,
-      tags: ['tag2', 'tag3'],
+      tags: ['toti', 'ext','act', 'scolari','gim'],
       isOpen: false,
     },
     {
@@ -759,127 +759,12 @@ export class AccordionJComponent {
     {
       id: 46,
       title: ' 45. Volei cerc',
-      content: `“I am the way, the truth and the life”, that’s what Jesus said.
+      content: `“ Se formeaza un cerc cu copii si liderii, unul dintre lideri mai
+        experimentat va sta in mijloc, cu ajutorul unei`,
+      tags: ['tag2', 'tag3'],
+      isOpen: false,
+    },
     
-      “I am the way, the truth and the life”, that’s what Jesus said.
-      Without the way there is no going, without the truth there is no knowing,
-    
-      Without the life there is no growing.
-      “I am the way, the truth and the life”, that’s what Jesus said.
-    `,
-      tags: ['tag2', 'tag3'],
-      isOpen: false,
-    },
-    {
-      id: 47,
-      title: '47. Joy, joy my heart is full of joy',
-      content: `Joy, joy my heart is full of joy,
-      Joy, joy my heart is full of joy.
-      My Saviour dear is ever near,
-      that’s the reason why my heart is full of joy.
-    
-      Peace, peace my heart is full of peace,
-      Peace, peace my heart is full of peace,
-      My Saviour dear is ever near,
-      that’s the reason why my heart is full of peace.`,
-      tags: ['tag2', 'tag3'],
-      isOpen: false,
-    },
-    {
-      id: 48,
-      title: '48. He has made me glad, He has made me glad',
-      content: `He has made me glad, He has made me glad.
-      I will rejoice for He has made me glad.
-      He has made me glad, He has made me glad.
-      I will rejoice for He has made me glad.`,
-      tags: ['tag2', 'tag3'],
-      isOpen: false,
-    },
-    {
-      id: 49,
-      title: '49. He’s got the whole world in His hands',
-      content: `He’s got the whole world in His hands, (4 times)
-    
-      He’s got you and me in His hands, (4 times)`,
-      tags: ['tag2', 'tag3'],
-      isOpen: false,
-    },
-    {
-      id: 50,
-      title: '50. The Lord is so good',
-      content: `The Lord is so good, the Lord is so good,
-      The Lord is so good, He’s so good to me.
-    
-      He died for me, He died for me,
-      He died for me, on Calvary.
-    
-      Now I am free, Now I am free,
-      Now I am free, He’s so good to me.`,
-      tags: ['tag2', 'tag3'],
-      isOpen: false,
-    },
-    {
-      id: 51,
-      title: '51. Wide, wide as the ocean',
-      content: `Wide, wide as the ocean,
-      High as the heavens above.
-      Deep, deep as the deepest sea,
-      Is my Saviour’s love.
-      I though so unworthy,
-      Still I’m a child of His care.
-      For His Word teaches m
-      That His love reaches me, everywhere.`,
-      tags: ['tag2', 'tag3'],
-      isOpen: false,
-    },
-    {
-      id: 52,
-      title: '52. Read your Bible, pray every day',
-      content: `Read your Bible, pray every day,
-      Pray every day, pray every day.
-      Read your Bible, pray every da
-      If you want to grow.
-      If you want to grow, If you want to grow.
-      Read your Bible pray every da
-      If you want to grow.`,
-      tags: ['tag2', 'tag3'],
-      isOpen: false,
-    },
-    {
-      id: 53,
-      title: '53.One door and only one',
-      content: ` One door, and only one, and yet its sides are two,
-      “Inside” and “outside”, on which side are you?
-      One door, and only one, and yet its sides are two,
-      I’m on the inside, on which side are you?
-    
-      One Lord, and only one, and yet the ways are two,
-      “Right way” and “wrong way”, on which side are you?
-      One Lord, and only one, and yet the ways are two,
-      I’m on the right way, on which way are you?
-    
-      One Book, and only one, which tells of places two,
-      “Good place” and “bad place”, oh, which place choose you?
-      One Book and only one, which tells of places two,
-      I choose the good place, and which place choose you?
-    `,
-      tags: ['tag2', 'tag3'],
-      isOpen: false,
-    },
-    {
-      id: 54,
-      title: '54. One way God said to get to heaven',
-      content: `One way God said to get to heaven,
-      Jesus is the only way.
-      One way to reach those pearly mansions,
-      Jesus is the only way.
-      No other way, no other way,
-      No other way to go.
-      One way God said to get to heaven
-      Jesus is the only way.`,
-      tags: ['tag2', 'tag3'],
-      isOpen: false,
-    },
   ];
 
   toggleAccordion(accordion: any): void {
