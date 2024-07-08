@@ -11,15 +11,39 @@
     placeholder="Codul de admin"
   />
   <br />
+  <form>
   <div class="input" [class.display]="isCodeValid" [class.hide]="!isCodeValid">
     <p>titlul:</p>
-    <input class="input_edit" type="text" maxlength="255" placeholder="Titlu" />
+    <input class="input_edit" type="text" maxlength="255" placeholder="Titlu" id="title" />
     <p>Descriere:</p>
-    <form>
-      <textarea>Descrie</textarea>
-    </form>
-
-    <input id="newNotes" />
-    <button (click)="addNotes()">addNotes</button>
+    <textarea id="desc">Descrie</textarea>
+    <div class="inputchecks" id="inputchecks">
+      <input type="checkbox" name="tag" id="scolari" value="sc" />
+      <label for="scolari">Scolari</label><br />
+      <input type="checkbox" name="tag" id="prescolari" value="psc" />
+      <label for="prescolari">Prescolari</label><br />
+      <input type="checkbox" name="tag" id="gimnaziu" value="gm" />
+      <label for="gimnaziu">Gimnaziu</label><br />
+      <input type="checkbox" name="tag" id="interior" value="int" />
+      <label for="interior">Interior</label><br />
+      <input type="checkbox" name="tag" id="exterior" value="ext" />
+      <label for="exterior">Exterior</label><br />
+      <input type="checkbox" name="tag" id="fara.materiale" value="fm" />
+      <label for="fara.materiale">Fara.materiale</label><br />
+      <input type="checkbox" name="tag" id="statice" value="st" />
+      <label for="statice">Statice</label><br />
+      <input type="checkbox" name="tag" id="active" value="ac" />
+      <label for="active">Active</label><br />
+      <input type="checkbox" name="tag" id="echipe" value="ec" />
+      <label for="echipe">Echipe</label><br />
+      <input type="checkbox" name="tag" id="impreuna" value="imp" />
+      <label for="impreuna">Impreuna</label><br />
+    </div>
   </div>
+  <button (click)="addArticle()">Adauga</button>
+</form>
+
+<!--     <input id="newNotes" />
+    <button (click)="addNotes()">addNotes</button>
+  </div> -->
 </div>

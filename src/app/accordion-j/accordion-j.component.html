@@ -30,13 +30,39 @@
     </div>
   </div>
 </div>
+<div
+  *ngFor="let accordion of articles"
+  [class.hidden]="isFilteredOut(accordion)"
+>
+  <button
+    class="accordion"
+    (click)="toggleAccordion(accordion)"
+    *ngIf="!isFilteredOut(accordion)"
+  >
+    {{ accordion.title }}
+  </button>
+  <div [class.open]="accordion.isOpen" class="panel"
+  *ngIf="!isFilteredOut(accordion)">
+    <div class="pre-line">
+      <p>{{ accordion.desc }}</p>
+    </div>
+    <div> Tags: 
+      <ul>
+        <li *ngFor="let tag of accordion.tags"> {{ filterIDtoName[tag] }}</li>
+      </ul>
+    </div>
+    <div>
+      <button (click)="deleteArticle(accordion.id)">Sterge</button>
+    </div>
+  </div>
+</div>
 
-<button class="accordion">
+<div class="accordion">
   <p *ngFor="let note of notes">
     <b>* {{ note.description }}</b>
     <button (click)="deleteNotes(note.id)">delete</button>
   </p>
-</button>
+</div>
 
 <!-- <div class="act ext fm presc scolari">
   <button class="accordion" #accordionButton>1. Șoarecele și pisica</button>

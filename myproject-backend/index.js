@@ -40,9 +40,43 @@ app.post("/api/appevgcopii/AddNotes", multer().none(), (request, response) => {
   });
 });
 
-app.delete("/api/appevgcopii/DeleteNotes", (request, response) => {
-  database.collection("articles").deleteOne({
-    _id: request.query.id,
+app.delete("/api/appevgcopii/DeleteNotes", async (request, response) => {
+  await database.collection("articles").deleteOne({
+    id: request.query.id+"",
   });
   response.json("Delete Successfully");
+});
+app.get("/api/appevgcopii/GetArticles", (req, res) => {
+  database
+    .collection("jarticles")
+    .find({})
+    .toArray((error, result) => {
+      res.send(result);
+    });
+})
+app.post("/api/appevgcopii/AddArticle", multer().none(), (req, res) => {
+  tags = [];
+  if(req.body && req.body.tags) {
+    tags = JSON.parse(req.body.tags);
+  }
+  tagsAt = {};
+  tags.forEach((tag) =>
+    tagsAt[tag] = true
+  ) 
+  database.collection("jarticles").count({}, function (error, numOfDocs) { 
+    database.collection("jarticles").insertOne({
+      id: (numOfDocs + 1).toString(),
+      title: req.body.title+"",
+      desc: req.body.desc+"",
+      tags: [...tags]
+    }).then(() => {
+      res.json("Added jArticle");
+    })
+  })
+})
+app.delete("/api/appevgcopii/DeleteArticle", async (request, response) => {
+  await database.collection("jarticles").deleteOne({
+    id: request.query.id+"",
+  });
+  response.json("Delete Successful");
 });

@@ -34,6 +34,33 @@ export class YourComponent {
 
   ngOnInit() {
     this.refreshNotes();
+    this.refreshArticles();
+  }
+  articles: any = [];
+  refreshArticles() {
+    this.http.get(this.APIUrl + 'GetArticles').subscribe((data) => {
+      this.articles = data;
+    });
+  }
+  addArticle() {
+    var title = (<HTMLInputElement>document.getElementById('title')).value;
+    var desc = (<HTMLInputElement>document.getElementById('desc')).value;
+    var checksBox = (<HTMLElement>document.getElementById('inputchecks'));
+    var checks = checksBox.getElementsByTagName('input');
+    var form = new FormData();
+    var tags = [];
+    for(let i = 0; i < checks.length; i++) { 
+      if(checks[i].checked) {
+        tags.push(checks[i].value);
+      }
+    }
+    form.append("title", title);
+    form.append("desc", desc);
+    form.append("tags", JSON.stringify(tags));
+    this.http.post(this.APIUrl + 'AddArticle', form).subscribe((data) => {
+      alert(data);
+      this.refreshArticles();
+    })
   }
 
   addNotes() {

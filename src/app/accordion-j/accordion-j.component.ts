@@ -8,6 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AccordionJComponent {
   filter: string = '';
+  filterIDtoName: any = {
+    "sc": "Scolari",
+    "psc": "Prescolari",
+    "gm": "Gimnaziu",
+    "int": "Interior",
+    "ext": "Exterior",
+    "fm": "Fara.materiale",
+    "st": "Statice",
+    "ac": "Active",
+    "ec": "Echipe",
+    "imp": "Impreuna"
+  }
   accordions: any[] = [
     {
       id: 1,
@@ -797,6 +809,31 @@ export class AccordionJComponent {
 
   ngOnInit() {
     this.refreshNotes();
+    this.refreshArticles();
+  }
+  articles: any = [];
+  refreshArticles() {
+    this.http.get(this.APIUrl + 'GetArticles').subscribe((data) => {
+      this.articles = data;
+      console.log(this.articles[0]);
+    });
+  }
+  addArticle() {
+    var title = (<HTMLInputElement>document.getElementById('title')).value;
+    var desc = (<HTMLInputElement>document.getElementById('desc')).value
+    var form = new FormData();
+    form.append("title", title);
+    form.append("desc", desc);
+    this.http.post(this.APIUrl + 'AddArticle', form).subscribe((data) => {
+      alert(data);
+      this.refreshArticles();
+    })
+  }
+  deleteArticle(id: any) {
+    this.http.delete(this.APIUrl + 'DeleteArticle?id=' + id).subscribe((data) => {
+      alert(data);
+      this.refreshArticles();
+    });
   }
 
   deleteNotes(id: any) {

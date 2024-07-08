@@ -9,3 +9,12 @@
 .red {
   border: 2px solid red;
 }
+.inputchecks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.inputchecks > label::after {
+  content: ' | '
+}
