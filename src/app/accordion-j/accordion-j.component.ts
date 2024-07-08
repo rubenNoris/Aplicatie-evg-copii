@@ -24,7 +24,7 @@ export class AccordionJComponent {
         participanți la joc nu au voie să depășească permietul hotărât de
         lideri. Pe parcurusul jocului copii pot fi motivați să incurajeze
         soricelul.`,
-      tags: ['psc', 'ext', ''],
+      tags: ['presc', 'ext', 'act', 'fm', 'scolari'],
       isOpen: false,
     },
     {
@@ -32,7 +32,7 @@ export class AccordionJComponent {
       title: '2. Rațele și vânătorii',
       content: `Se formează o linie cu toți copii, iar 2 lideri sunt ori în față ori in
         spatele copiilor, se aruncă cu mingea spre copii cine este atins iese.`,
-      tags: ['tag2', 'tag3'],
+      tags: ['presc', 'scolari'],
       isOpen: false,
     },
     {
@@ -43,7 +43,7 @@ export class AccordionJComponent {
         invers. Liderii au rolul de a arunca pe jos câte o minge, in acest timp
         copii aleargă, iar in dreptul mingii trebuie să sară peste ea. Cine este
         atins iese`,
-      tags: ['tag2', 'tag3'],
+      tags: ['presc', 'scolari'],
       isOpen: false,
     },
     {
@@ -52,7 +52,7 @@ export class AccordionJComponent {
       content: ` Se face un cerc cu copii, in centru este un lider ce va învârti sacul cu
         mingea legata de se sfoară, la firul ierbii. Copii trebuie să sară peste
         minge, cine este atins iese.`,
-      tags: ['tag2', 'tag3'],
+      tags: ['int', 'ext', 'act', 'presc', 'scolari'],
       isOpen: false,
     },
     {
@@ -62,7 +62,7 @@ export class AccordionJComponent {
         zboară" și va da exemplu de un obiect ori care zboară ori care nu
         zboară, dacă acel obiect zboară, copii trebuie să ridice o mână, dacă
         nu, nu trebuie. Cine greșește iese `,
-      tags: ['tag2', 'tag3'],
+      tags: ['int', 'ext','act','toti','presc'],
       isOpen: false,
     },
     {
@@ -73,7 +73,7 @@ export class AccordionJComponent {
         sforii iar cand liderul anunța o altă zonă ei trebuie să sară peste
         sfoară in locul corect, dacă in stânga e cer să se ducă acolo. Cine
         greșește, sau ultimul care ajunge in partea corectă este eliminat.`,
-      tags: ['tag2', 'tag3'],
+      tags: ['toti', 'ext','act', 'scolari','gim'],
       isOpen: false,
     },
     {
@@ -83,7 +83,7 @@ export class AccordionJComponent {
         incepe muzica, copii se învârt in jurul scaunelor, in momentul opririi
         muzicii copii trebuie să se așeze pe scaun, cine rămâne fara scaun iese
         afară. `,
-      tags: ['tag2', 'tag3'],
+      tags: ['toti', 'int','ext', 'act','scolari','gim'],
       isOpen: false,
     },
     {
@@ -93,7 +93,7 @@ export class AccordionJComponent {
         ochiul meu ceva roșu" sau orice altă culoare, copii trebuie să
         identifice in jurul lor obiectul ales de lider. Rolurile se pot schimba
         in functie de câștigător. `,
-      tags: ['tag2', 'tag3'],
+      tags: ['toti', 'int','ext', 'act','presc'],
       isOpen: false,
     },
     {
@@ -104,7 +104,7 @@ export class AccordionJComponent {
         echipa ce a fost aleasă fuge in fata si inconjoara cercul, cealalta
         invers inconjoara cercul, echipa ce ajunge prima la locul gol ramas,
         ramane in cerc, si echipa rămasă repetă procesul`,
-      tags: ['tag2', 'tag3'],
+      tags: ['toti', 'ext','act', 'scolari','presc','echipe'],
       isOpen: false,
     },
     {
@@ -118,7 +118,7 @@ export class AccordionJComponent {
         Cine aplauda cand liderul nu are mainile una in dreptul celeilalte va
         iesi, sau copilul care va fi mai lent poate fi si el eliminat. Castiga
         cine ramane ultimul`,
-      tags: ['tag2', 'tag3'],
+      tags: ['toti', 'ext','act','echipe', 'scolari','presc'],
       isOpen: false,
     },
     {
@@ -140,7 +140,7 @@ export class AccordionJComponent {
         alesi sunt identificati, ori cand cheile reusesc a fi luate si copilul
         ce le-a luat se si intoarce in cerc, sau jocul se poate incheia atunci
         cand regurile nu se respecta.`,
-      tags: ['tag2', 'tag3'],
+      tags: ['toti', 'ext','act', 'scolari','gim'],
       isOpen: false,
     },
     {

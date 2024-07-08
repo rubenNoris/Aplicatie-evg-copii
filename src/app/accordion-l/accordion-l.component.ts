@@ -59,7 +59,7 @@ export class AccordionLComponent {
     },
     {
       id: 7,
-      title: '7. 1. Dumnezeu vorbește la Sinai',
+      title: '7. Dumnezeu vorbește la Sinai',
       content: `     - Exodul 17:1-7, Exodul 19,,
         -> Verset de memorat: Luca 11:28 `,
       tags: ['tag2', 'tag3'],
