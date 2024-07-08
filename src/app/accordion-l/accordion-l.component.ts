@@ -66,21 +66,18 @@ export class AccordionLComponent {
       isOpen: false,
     },
     {
-      "id": 8,
-      "title": "8. Idolatria poporului Israel",
-      "content": [
-        "Exodul 24:12- 13:1",
-        "Exodul 31:18",
-        "Exodul 32, 34",
-        "-> Verset de memorat: Psalmul 51:4"
+      id: 8,
+      title: '8. Idolatria poporului Israel',
+      content: [
+        'Exodul 24:12- 13:1',
+        'Exodul 31:18',
+        'Exodul 32, 34',
+        '-> Verset de memorat: Psalmul 51:4',
       ],
-      "tags": ["tag2", "tag3"],
-      "isOpen": false
+      tags: ['tag2', 'tag3'],
+      isOpen: false,
     },
-    
-    
-    
-    
+
     {
       id: 9,
       title: '9. Explorarea țării promise',
@@ -433,41 +430,6 @@ export class AccordionLComponent {
       id: 52,
       title: '52. Un strigăt după ajutor',
       content: `Estera 3:15b-5:2<br />->Verset de memorat: Psalmul 34:15`,
-      tags: ['tag2', 'tag3'],
-      isOpen: false,
-    },
-    {
-      id: 53,
-      title: '53.One door and only one',
-      content: ` One door, and only one, and yet its sides are two,
-      “Inside” and “outside”, on which side are you?
-      One door, and only one, and yet its sides are two,
-      I’m on the inside, on which side are you?
-    
-      One Lord, and only one, and yet the ways are two,
-      “Right way” and “wrong way”, on which side are you?
-      One Lord, and only one, and yet the ways are two,
-      I’m on the right way, on which way are you?
-    
-      One Book, and only one, which tells of places two,
-      “Good place” and “bad place”, oh, which place choose you?
-      One Book and only one, which tells of places two,
-      I choose the good place, and which place choose you?
-    `,
-      tags: ['tag2', 'tag3'],
-      isOpen: false,
-    },
-    {
-      id: 54,
-      title: '54. One way God said to get to heaven',
-      content: `One way God said to get to heaven,
-      Jesus is the only way.
-      One way to reach those pearly mansions,
-      Jesus is the only way.
-      No other way, no other way,
-      No other way to go.
-      One way God said to get to heaven
-      Jesus is the only way.`,
       tags: ['tag2', 'tag3'],
       isOpen: false,
     },
