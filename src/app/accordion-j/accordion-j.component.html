@@ -31,7 +31,14 @@
   </div>
 </div>
 
-<div class="act ext fm presc scolari">
+<button class="accordion">
+  <p *ngFor="let note of notes">
+    <b>* {{ note.description }}</b>
+    <button (click)="deleteNotes(note.id)">delete</button>
+  </p>
+</button>
+
+<!-- <div class="act ext fm presc scolari">
   <button class="accordion" #accordionButton>1. Șoarecele și pisica</button>
   <div class="panel">
     <p>
@@ -48,9 +55,6 @@
       depășească permietul hotărât de lideri. Pe parcurusul jocului copii pot fi
       motivați să incurajeze soricelul.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc scolari">
@@ -60,9 +64,6 @@
       Se formează o linie cu toți copii, iar 2 lideri sunt ori în față ori in
       spatele copiilor, se aruncă cu mingea spre copii cine este atins iese.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc scolari">
@@ -75,9 +76,6 @@
       copii aleargă, iar in dreptul mingii trebuie să sară peste ea. Cine este
       atins iese
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all int ext act presc scolari">
@@ -88,9 +86,6 @@
       mingea legata de se sfoară, la firul ierbii. Copii trebuie să sară peste
       minge, cine este atins iese.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all int ext act toti presc">
@@ -102,9 +97,6 @@
       acel obiect zboară, copii trebuie să ridice o mână, dacă nu, nu trebuie.
       Cine greșește iese
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all ext act toti scolari gim">
@@ -117,9 +109,6 @@
       in locul corect, dacă in stânga e cer să se ducă acolo. Cine greșește, sau
       ultimul care ajunge in partea corectă este eliminat.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all int ext toti act presc scolari gim">
@@ -131,9 +120,6 @@
       muzicii copii trebuie să se așeze pe scaun, cine rămâne fara scaun iese
       afară.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all int ext act toti presc">
@@ -147,9 +133,6 @@
       jurul lor obiectul ales de lider. Rolurile se pot schimba in functie de
       câștigător.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all ext act echipe presc scolari">
@@ -162,9 +145,6 @@
       inconjoara cercul, echipa ce ajunge prima la locul gol ramas, ramane in
       cerc, si echipa rămasă repetă procesul
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc int ext fm act toti presc scolari">
@@ -179,9 +159,6 @@
       cand liderul nu are mainile una in dreptul celeilalte va iesi, sau copilul
       care va fi mai lent poate fi si el eliminat. Castiga cine ramane ultimul
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act echipe ptesc scolari gim">
@@ -204,9 +181,6 @@
       ori cand cheile reusesc a fi luate si copilul ce le-a luat se si intoarce
       in cerc, sau jocul se poate incheia atunci cand regurile nu se respecta.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act echipe presc scolari gim">
@@ -224,9 +198,6 @@
       ochi prin auzirea zgomotului sa identifice unde sunt si sa se duca se le
       ia.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act toti presc scolari gim">
@@ -243,9 +214,6 @@
       descalificat. La fiecare 1-2 copii iesiti se va scoate cate o
       insula/carton. Castigatorii sunt cei ce vor fi la final pe ultima insula.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act toti presc scolari gim">
@@ -260,9 +228,6 @@
       prins sau ajunge greoi in perimetrul opus se va alatura celui din mijloc.
       Copii vor pleca la fluierul liderului.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act toti presc scolari">
@@ -279,9 +244,6 @@
       repeta pana cand va ramane doar un singur copil si acela va fi
       castigatorul.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act toti scolari gim">
@@ -298,9 +260,6 @@
       obiect găsit, iar uneori sunt oferite indicii pentru a-i ajuta să găsească
       obiectele mai greu de detectat.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all toti presc scolari gim">
@@ -316,9 +275,6 @@
       După ce aruncă mingea, copilul în cauză se așază și nu mai poate primi
       mingea.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all fm presc scolari">
@@ -338,9 +294,6 @@
       amuzați descoperind noi combinații de cuvinte care încep cu aceeași
       literă.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc int act echipe scolari gim">
@@ -361,9 +314,6 @@
       copii, care au pierdut, rămân pe scaunele lor. Câștigători sunt ultimii 2
       copii rămași.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc int ext fm act toti scolari presc">
@@ -382,9 +332,6 @@
       Jocul nu are un câștigător si poate persista atât timp cât consideră
       potrivit liderul.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act toti scolari presc gim">
@@ -405,9 +352,6 @@
       conectându-se și ei la cerc. Se va alege apoi un alt număr și va începe o
       nouă rundă cu „peștii” rămași. Mai tărziu echipele pot fi inversate.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act toti scolari gim">
@@ -426,9 +370,6 @@
       Jocul continuă până când toți participanții devin "prinderea" sau până
       când dorința de a continua jocul încetează.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc int ext fm stat toti scolari gim">
@@ -448,9 +389,6 @@
       toti copii avand roul sa identifice ucigasul, iar in cazul acesta
       castigatorul e cel ce "omoara" cei mai multi copii.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext fm act toti presc scolari gim">
@@ -468,9 +406,6 @@
       pereche pentru a relua jocul. Castigatorul va fi ,,Petru,, daca o prinde
       intr-un minut, sau ,,Maria,, daca nu o prinde.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc int ext act toti scolari gim">
@@ -496,9 +431,6 @@
       Catigatorul va fi copilul cu cele mai multe nume scrise dar si copilul al
       carui nume nu a fost vazut.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act echipe presc scolari gim">
@@ -517,9 +449,6 @@
       desfasura concomitent cu toate echipe formate. Echipa care la final are
       cele mai multe cozi luate castiga
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="presc echipe fm scolari gim">
@@ -538,9 +467,6 @@
       grupul format in spatele acestuia). Acesti ultimii 2 vor avea dreptul sa
       joace "ciocanelele" pana la 3.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc int ext act toti scolari gim">
@@ -560,9 +486,6 @@
       inchisi iar apoi va mai incerca o data. Cand Cenusareasa gaseste pantoful
       si persoana care il are cei doi schimba locul si se continua jocul.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all ext act echipe presc scolari gim">
@@ -580,9 +503,6 @@
       copilul din mijloc. Jocul poate avea stabilita o limita de timp sau se
       poate juca pana cand toti copii au avut cel putin o aruncare.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act toti">
@@ -599,9 +519,6 @@
       caruia a iesit mingea va merge in mijlocul cercului, ca sa loveasca
       mingea.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc int ext act echipe">
@@ -615,9 +532,6 @@
       calea ,,porcului,, vor fi puse si cateva obstacole pe care acesta trebuie
       sa le ocoleasca.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 
@@ -638,9 +552,6 @@
       pierzatorii joaca intre ei) Jocul se incepe cu aruncarea mingerii la
       mijloc
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act echipe scolari gim">
@@ -668,9 +579,6 @@
       inapoi copiilor. Jocul se termina la 3 goluri marcate. Jocul se incepe cu
       aruncarea mingerii la mijloc in zona ambilor mijlocasi.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all ext act echipe scolari gim">
@@ -690,9 +598,6 @@
       adaptat in functie de nevoie folosindu se mingi usoare gonflabile, sau
       baloane cu putina apa.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="presc scolari gim echipe">
@@ -714,9 +619,6 @@
       se arunca saculetul se va striga un numar, copilul ce are saculetul va
       trebui sa paseze cu respectivul copil ce va avea atribuit numarul strigat.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act echipe scolari gim">
@@ -736,9 +638,6 @@
       cronometreze jocul si echipa castigatoare va fi cea care transmite mesajul
       in cel mai scurt timp.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act echipe scolari gim">
@@ -756,9 +655,6 @@
       poate pune balonul inapoi in joc daca acesta cade intr-o parte. Va castiga
       echipa cu cel mai mare punctaj.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act echipe scolari gim">
@@ -776,9 +672,6 @@
       celeilalte. Copii se intorc inapoi la locul lor iar apoi liderul va striga
       alt numar. Echipa castigatoare este cea care obtine prima 10 puncte.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act echipe presc scolari gim">
@@ -800,9 +693,6 @@
       va ajunge din nou in fata. Echipa castigatoare va fi cea care va strange
       cele mai multe puncte.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all ext act echipe scolari gim">
@@ -827,9 +717,6 @@
       cercului iar mingea va trebui aruncata intre copii din cerc si lider, in
       loc sa fie aruncata doar in cerc.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="presc echipe scolari gim">
@@ -855,9 +742,6 @@
       cel mai mare punctaj dupa terminarea perioadei de timp ce va fi stabilita
       de ider de la inceput.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc ext act echipe scolari gim">
@@ -887,9 +771,6 @@
       aduse mai aproape cu cate un metru. Pentru copii mai ici scaunele vor fi
       mutate mai aproape.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc int stat echipe scolari">
@@ -904,9 +785,6 @@
       cand echipa iese afara. Echipa castigatoare va fi cea care ramane serioasa
       cel mai mult timp.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 
@@ -927,9 +805,6 @@
       castigatoare este cea care ajunge la 12 puncte (sau cate va decide
       liderul). Se recomanda folosirea unor baloane mai rezistente.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 
@@ -950,9 +825,6 @@
       poate aseza. Nu au voie sa se impinga. Castigatorul este echipa cu cel mai
       mare punctaj.
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
 </div>
 <div class="all presc scolari gim">
@@ -962,8 +834,5 @@
       Se formeaza un cerc cu copii si liderii, unul dintre lideri mai
       experimentat va sta in mijloc, cu ajutorul unei
     </p>
-    <!-- <video controls>
-            <source src="video-Moise.mp4" type="video/mp4" />
-          </video> -->
   </div>
-</div>
+</div> -->
